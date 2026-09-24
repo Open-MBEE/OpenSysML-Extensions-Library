@@ -14,38 +14,148 @@ library package DocumentQueries {
 		return result : Element[0..*] ordered;
 	}
 
+	/* Descendants and Ancestors walk ownership from source to maxDepth levels;
+	 * maxDepth = null (the default) walks the whole tree. */
 	calc def Descendants {
 		in source : Element[0..*] ordered;
-		in maxDepth : Integer[1];
+		in maxDepth : Integer[0..1] = null;
 		return result : Element[0..*] ordered;
 	}
 
 	calc def Ancestors {
 		in source : Element[0..*] ordered;
-		in maxDepth : Integer[1];
+		in maxDepth : Integer[0..1] = null;
 		return result : Element[0..*] ordered;
+	}
+
+	/* Named: the model elements the qualified names denote, in the order given;
+	 * a name that denotes nothing is an error. */
+	calc def Named {
+		in qualifiedName : String[1..*] ordered;
+		return result : Element[0..*] ordered;
+	}
+
+	/* Objects: the objects the session holds that are of the named type,
+	 * each nested object under its path (`car.wheels[2]`). Requires a session. */
+	calc def Objects {
+		in type : String[1];
+		return result : Element[0..*] ordered;
+	}
+
+	/* Verdicts: one row per assertion checked on each source row's object and the
+	 * objects it holds (a session object as it stands, an element as declared);
+	 * kind selects all, constraint, requirement, satisfaction or verification. */
+	calc def Verdicts {
+		in source : Element[0..*] ordered;
+		in kind : String[1] = "all";
+		return result : Element[0..*] ordered;
+	}
+
+	/* The properties of a Verdicts row, for Project and column expressions
+	 * (`Verdict::verdict`); a row also answers its assertion's own properties by
+	 * name. The assertion and the carrier it was checked on are elements, so a
+	 * Column expression cannot read them; project them by name instead. */
+	attribute def Verdict {
+		ref assertion : Element[1];
+		attribute kind : String[1];
+		ref carrier : Element[0..1];
+		attribute path : String[1];
+		attribute verdict : String[1];
+		attribute condition : String[0..1];
+		attribute reason : String[0..1];
+		attribute 'verification' : String[0..*] ordered;
+	}
+
+	/* States: one row per active leaf state of each source row's object (a
+	 * session object, or an element whose objects the session holds), machines
+	 * in the object's order and leaves in region order; an object with no state
+	 * machine is refused. Requires a session. */
+	calc def States {
+		in source : Element[0..*] ordered;
+		return result : Element[0..*] ordered;
+	}
+
+	/* InState: the objects the session holds whose state machine is in the
+	 * named state, a leaf or a state enclosing one, by name or dotted path
+	 * (`on.run`); a name no machine declares is refused. Requires a session. */
+	calc def InState {
+		in name : String[1];
+		return result : Element[0..*] ordered;
+	}
+
+	/* The properties of a States row, for Project and column expressions
+	 * (`State::name`); a row also answers its state declaration's own
+	 * properties. object and 'state' are elements: project them by name. */
+	attribute def State {
+		ref object : Element[1];
+		attribute path : String[1];
+		attribute machine : String[1];
+		attribute name : String[1];
+		attribute statePath : String[1];
+		ref 'state' : Element[0..1];
+		attribute region : String[1];
+		attribute enclosing : String[0..*] ordered;
+	}
+
+	/* Events: the session's trace as a relation in the order recorded, one row
+	 * per accept, send, transition fired, state entry, exit or do step, choice
+	 * point drawn or guard left unevaluated; source keeps the rows of the given
+	 * objects (every object when null), kind the kinds named (`all`, or kinds
+	 * separated by `,`), since and before the instants in [since, before) as
+	 * durations or bare numbers of the clock's seconds. Requires a session
+	 * recording a trace. */
+	calc def Events {
+		in source : Element[0..*] ordered = null;
+		in kind : String[1] = "all";
+		in since : ScalarValue[0..1] = null;
+		in before : ScalarValue[0..1] = null;
+		return result : Element[0..*] ordered;
+	}
+
+	/* The properties of an Events row, for Project and column expressions
+	 * (`Event::time`, `Event::'event'`); a row also answers the properties of
+	 * the behavior that made it. object and target are elements: project them
+	 * by name. */
+	attribute def Event {
+		attribute kind : String[1];
+		attribute time : ScalarValue[1];
+		ref object : Element[0..1];
+		attribute path : String[0..1];
+		attribute machine : String[0..1];
+		attribute 'state' : String[0..1];
+		attribute 'from' : String[0..1];
+		attribute 'to' : String[0..1];
+		ref target : Element[0..1];
+		attribute 'event' : String[0..1];
+		attribute payload : String[0..*] ordered;
+		attribute alternatives : String[0..*] ordered;
+		attribute taken : String[0..1];
+		attribute text : String[1];
 	}
 
 	calc def RelatedElements {
 		in source : Element[0..*] ordered;
 		/* relationshipKind: "specialization", "subsetting", "redefinition",
-		 * "typing", "connection", "allocation", "satisfaction" or
-		 * "verification"; direction: "outgoing" or "incoming". */
+		 * "typing", "connection", "allocation", "satisfaction", "verification",
+		 * "derivation" or "refinement"; direction: "outgoing" or "incoming". */
 		in relationshipKind : String[1];
 		in direction : String[1];
-		in maxDepth : Integer[1];
+		/* maxDepth: how many relationships to follow; null (the default) is unbounded. */
+		in maxDepth : Integer[0..1] = null;
 		return result : Element[0..*] ordered;
 	}
 
+	/* WhereType keeps the elements that are of any of the named types. */
 	calc def WhereType {
 		in source : Element[0..*] ordered;
-		in type : String[1];
+		in type : String[1..*] ordered;
 		return result : Element[0..*] ordered;
 	}
 
+	/* WhereMetadata keeps the elements annotated with any of the named metadata definitions. */
 	calc def WhereMetadata {
 		in source : Element[0..*] ordered;
-		in 'metadata' : String[1];
+		in 'metadata' : String[1..*] ordered;
 		return result : Element[0..*] ordered;
 	}
 
@@ -117,7 +227,8 @@ library package DocumentQueries {
 
 	part def Span :> Run {
 		attribute text : String[1];
-		/* style: "plain", "emphasis", "strong" or "code". */
+		/* style: "plain", "emphasis", "strong", "code" or "math"; a math
+		 * span's text is LaTeX, typeset inline. */
 		attribute style : String[0..1];
 	}
 
@@ -141,7 +252,7 @@ library package DocumentQueries {
 	part def SpanColumn :> ColumnRun {
 		/* column: the projected column whose values become the run text. */
 		attribute column : String[1];
-		/* style: "plain", "emphasis", "strong" or "code". */
+		/* style: "plain", "emphasis", "strong", "code" or "math". */
 		attribute style : String[0..1];
 		/* styleColumn: a projected column supplying each row's style. */
 		attribute styleColumn : String[0..1];
@@ -175,6 +286,13 @@ library package DocumentQueries {
 		attribute description : String[1];
 	}
 
+	/* Formula typesets one LaTeX expression as display mathematics on a line
+	 * of its own; a named formula is a Ref target. */
+	part def Formula :> ContentBlock {
+		attribute source : String[1];
+		attribute caption : String[0..1];
+	}
+
 	part def Diagram :> ContentBlock {
 		attribute caption : String[0..1];
 		/* kind: a supported rendering kind ("tree", "interconnection",
@@ -189,5 +307,47 @@ library package DocumentQueries {
 		 * when absent. */
 		attribute palette : String[0..1];
 		ref source : Element[0..1];
+	}
+
+	/* A relationship-derived Project column: the elements RelatedElements
+	 * reaches from each row, as a "list" (default), a "count" or "any";
+	 * maxDepth = null is unbounded, and targets, when given, keeps only the
+	 * reached elements among them. */
+	calc def RelatedColumn {
+		in name : String[1];
+		in relationshipKind : String[1];
+		in direction : String[1];
+		in maxDepth : Integer[0..1] = null;
+		in aggregate : String[1] = "list";
+		in targets : Element[0..*] ordered = null;
+		return result : ColumnSpec[1];
+	}
+
+	/* WhereRelated: the source rows with at least one element reachable by the
+	 * relationship kind and direction of RelatedElements within maxDepth
+	 * (exists = true), or with none (exists = false); maxDepth = null is unbounded. */
+	calc def WhereRelated {
+		in source : Element[0..*] ordered;
+		in relationshipKind : String[1];
+		in direction : String[1];
+		in maxDepth : Integer[0..1] = null;
+		in exists : Boolean[1] = true;
+		return result : Element[0..*] ordered;
+	}
+
+	/* Except: the source rows whose element, object, verdict, state or event
+	 * is not among exclude, once each in source order. */
+	calc def Except {
+		in source : Element[0..*] ordered;
+		in exclude : Element[0..*] ordered;
+		return result : Element[0..*] ordered;
+	}
+
+	/* Union: the source rows, then the rows of other not already present, in
+	 * order with duplicates removed. */
+	calc def Union {
+		in source : Element[0..*] ordered;
+		in other : Element[0..*] ordered;
+		return result : Element[0..*] ordered;
 	}
 }
