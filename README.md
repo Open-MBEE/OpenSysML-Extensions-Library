@@ -7,6 +7,11 @@ tool. They are **not** part of the OMG standard library; some of them are
 proposed for standardization (DiagramLayout, IdentityMetadata and
 MigrationMetadata say so in their doc text).
 
+A model that uses one of these libraries is valid SysML v2 that depends on a
+non-normative OpenSysML library; other tools resolve it when given the
+`libraries/` folder (OpenSysML bundles the same files as its
+`OpenSysML Libraries` folder).
+
 ## The libraries
 
 | Library | File | Description | Portability |
