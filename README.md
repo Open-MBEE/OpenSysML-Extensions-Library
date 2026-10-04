@@ -75,6 +75,21 @@ Releases are semver tags `vX.Y.Z` on `main`:
 Each release attaches a `.kpar` project archive. Consumers pin a tag or
 commit.
 
+## Engine contract
+
+`engine-contract.json` lists the qualified names in `libraries/` that
+OpenSysML's engine binds to — the functions its runtime registry implements,
+the metadata and features it reads, the DocumentQueries elements its document
+and query plans compile, and the names the SysML v1 migrator writes into user
+models. OpenSysML binds by qualified name, so those names are an API: removing,
+renaming or changing an entry is a breaking change and needs `contract`
+bumped, a coordinated Open-MBEE/OpenSysML pull request that re-pins its
+vendored copy, and a MAJOR release. Additions are MINOR.
+
+`./scripts/check-engine-contract.sh` validates the manifest and resolves every
+entry against `libraries/` on the pinned pilot; in pull requests it also diffs
+the manifest against the base and fails on unannounced breaking changes.
+
 ## Validation
 
 `./scripts/validate-libraries.sh` runs the pinned OMG pilot batch validator

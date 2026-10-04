@@ -10,7 +10,10 @@ set -euo pipefail
 . "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/pilot-pin.sh"
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-source="$repo_root/scripts/pilot-sysml-validator/ValidateSysML.java"
+sources=(
+	"$repo_root/scripts/pilot-sysml-validator/ValidateSysML.java"
+	"$repo_root/scripts/engine-contract/CheckEngineContract.java"
+)
 target="$repo_root/build/pilot-sysml-validator"
 classes="$target/classes"
 validator_target="$repo_root/build/pilot-validator/target/sysml-download/sysml"
@@ -45,10 +48,12 @@ if [[ ! -d "$library" ]]; then
 	echo "error: pilot standard library not found at $library" >&2
 	exit 1
 fi
-if [[ ! -f "$source" ]]; then
-	echo "error: SysML validator source not found at $source" >&2
-	exit 1
-fi
+for source in "${sources[@]}"; do
+	if [[ ! -f "$source" ]]; then
+		echo "error: validator source not found at $source" >&2
+		exit 1
+	fi
+done
 
 if command -v java >/dev/null 2>&1; then
 	java_bin="$(command -v java)"
@@ -94,13 +99,19 @@ for class in \
 done
 
 mkdir -p "$classes"
-output_class="$classes/io/opensysml/pilot/ValidateSysML.class"
-if [[ "$force" -eq 1 ]] || [[ ! -f "$output_class" ]] ||
-	[[ "$output_class" -ot "$source" ]] || [[ "$output_class" -ot "$validator_stamp" ]]; then
-	echo "Compiling $source ..."
-	"$javac_bin" -cp "$pilot_jar" -d "$classes" "$source"
+recompile=0
+for source in "${sources[@]}"; do
+	output_class="$classes/io/opensysml/pilot/$(basename "${source%.java}").class"
+	if [[ "$force" -eq 1 ]] || [[ ! -f "$output_class" ]] ||
+		[[ "$output_class" -ot "$source" ]] || [[ "$output_class" -ot "$validator_stamp" ]]; then
+		recompile=1
+	fi
+done
+if [[ "$recompile" -eq 1 ]]; then
+	echo "Compiling ${sources[*]} ..."
+	"$javac_bin" -cp "$pilot_jar" -d "$classes" "${sources[@]}"
 else
-	echo "SysML validator already compiled at $output_class"
+	echo "Validators already compiled at $classes"
 fi
 
 # The pin the launcher reports, written from pilot-pin.sh rather than read out of the
@@ -162,7 +173,41 @@ sed "s|__PILOT_ARTIFACT_VERSION__|${PILOT_ARTIFACT_VERSION}|g" \
 	"$launcher_tmp" >"${launcher_tmp}.out"
 mv "${launcher_tmp}.out" "$launcher"
 rm -f "$launcher_tmp"
-trap - EXIT
 chmod +x "$launcher"
 
+contract_launcher="$target/check-engine-contract"
+contract_tmp="$(mktemp "${contract_launcher}.XXXXXX")"
+trap 'rm -f "$contract_tmp" "${contract_tmp}.out"' EXIT
+cat >"$contract_tmp" <<'EOF'
+#!/bin/sh
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+CLASSES="$SCRIPT_DIR/classes"
+JAR="$SCRIPT_DIR/../pilot-validator/target/sysml-download/sysml/jupyter-sysml-kernel-__PILOT_ARTIFACT_VERSION__-all.jar"
+
+if command -v java >/dev/null 2>&1; then
+	JAVA=java
+elif [ -x /usr/local/jdk-21/bin/java ]; then
+	JAVA=/usr/local/jdk-21/bin/java
+else
+	echo "Error: Java 21+ not found" >&2
+	exit 1
+fi
+
+if [ ! -f "$JAR" ]; then
+	echo "Error: pilot SysML jar not found at $JAR" >&2
+	exit 1
+fi
+
+exec "$JAVA" -cp "$CLASSES:$JAR" io.opensysml.pilot.CheckEngineContract "$@"
+EOF
+sed "s|__PILOT_ARTIFACT_VERSION__|${PILOT_ARTIFACT_VERSION}|g" \
+	"$contract_tmp" >"${contract_tmp}.out"
+mv "${contract_tmp}.out" "$contract_launcher"
+rm -f "$contract_tmp"
+trap - EXIT
+chmod +x "$contract_launcher"
+
 echo "Built $launcher (pilot $PILOT_TAG, $PILOT_ARTIFACT_VERSION)"
+echo "Built $contract_launcher (pilot $PILOT_TAG, $PILOT_ARTIFACT_VERSION)"

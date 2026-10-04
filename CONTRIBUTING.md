@@ -28,6 +28,15 @@ consumers, and its portability (any SysML v2 tool, or an executing engine).
 - State the semver impact of your change in the pull request (see Versioning
   in the README).
 
+## The engine contract
+
+`engine-contract.json` records the qualified names OpenSysML binds to.
+Changing or removing a manifest entry is a breaking change: it needs
+`contract` bumped, a coordinated Open-MBEE/OpenSysML pull request that
+re-pins its vendored copy, and a MAJOR release. New engine bindings are added
+to the manifest by the OpenSysML-side pull request that introduces them —
+upstream there first.
+
 ## Review
 
 At least one maintainer approval. Changes OpenSysML's runtime depends on need
