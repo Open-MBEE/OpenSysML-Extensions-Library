@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate the extension libraries
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Cache the pilot validator
+        uses: actions/cache@v4
+        with:
+          path: build/pilot-validator
+          key: pilot-validator-${{ hashFiles('scripts/pilot-pin.sh', 'scripts/download-pilot-validator.sh', 'scripts/download-pilot-sysml-validator.sh', 'scripts/verify-pilot-pin.sh') }}
+          restore-keys: pilot-validator-
+
+      - name: Verify the pilot pin
+        run: ./scripts/verify-pilot-pin.sh
+
+      - name: Validate the libraries
+        run: ./scripts/validate-libraries.sh
+
+      - name: Check the README library table
+        run: ./scripts/check-readme-table.sh
+
+      - name: Build the project archive
+        run: ./scripts/build-kpar.py --version "0.0.0-dev.${{ github.run_number }}+${GITHUB_SHA::7}" --output opensysml-extension-libraries-dev.kpar
+
+      - name: Upload the project archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: opensysml-extension-libraries-dev
+          path: opensysml-extension-libraries-dev.kpar
