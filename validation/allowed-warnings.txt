@@ -1,0 +1,11 @@
+# Warnings the pinned OMG pilot validator emits over libraries/ that the gate
+# accepts for now, exactly as the validator prints them.
+#
+# These four files declare `standard library package`; an open
+# Open-MBEE/OpenSysML pull request changes them to `library package`. Once it
+# merges, the change is ported here and these entries are deleted. This list
+# may only shrink: an entry the validator stops emitting fails the gate.
+DiagramLayout.sysml:1:1: warning: User library packages should not be marked as standard
+IdentityMetadata.sysml:1:1: warning: User library packages should not be marked as standard
+MigrationMetadata.sysml:1:1: warning: User library packages should not be marked as standard
+SysMLValidation.sysml:1:1: warning: User library packages should not be marked as standard
