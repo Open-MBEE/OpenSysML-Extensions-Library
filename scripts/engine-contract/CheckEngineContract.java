@@ -21,9 +21,9 @@ import org.omg.sysml.lang.sysml.Element;
 import org.omg.sysml.lang.sysml.Feature;
 import org.omg.sysml.lang.sysml.FeatureDirectionKind;
 import org.omg.sysml.lang.sysml.Function;
+import org.omg.sysml.lang.sysml.Metaclass;
 import org.omg.sysml.lang.sysml.Namespace;
 import org.omg.sysml.lang.sysml.SysMLPackage;
-import org.omg.sysml.lang.sysml.Type;
 import org.omg.sysml.util.SysMLLibraryUtil;
 import org.omg.sysml.xtext.SysMLStandaloneSetup;
 import org.omg.sysml.xtext.xmi.SysMLxStandaloneSetup;
@@ -147,8 +147,8 @@ public final class CheckEngineContract extends SysMLUtil {
                 }
             }
             case "metadata" -> {
-                if (!(element instanceof Type type)) {
-                    fail(name, "not a Type: " + element.eClass().getName());
+                if (!(element instanceof Metaclass type)) {
+                    fail(name, "not a Metaclass: " + element.eClass().getName());
                     break;
                 }
                 if (specList.isEmpty()) {
