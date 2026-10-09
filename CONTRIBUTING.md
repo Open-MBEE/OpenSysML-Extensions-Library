@@ -12,6 +12,15 @@ consumers, and its portability (any SysML v2 tool, or an executing engine).
 - Never reuse an OMG standard-library package name.
 - `.kerml` only for KerML-only content; everything else is `.sysml`.
 
+### Rendering and view vocabulary
+
+Use a standard filtered view wherever one exists; a library name is only an
+optional shorter form of it. The extension libraries are for what standard
+SysML cannot express: mixed diagrams, results from runs, and layout. A
+proposal for new rendering or view vocabulary must show that no standard view
+(a `GeneralView`, `GridView`, `InterconnectionView` or other standard view
+with a filter) expresses the same diagram.
+
 ## Documentation
 
 - A top-level `doc` that says NON-NORMATIVE and what the library is for.
