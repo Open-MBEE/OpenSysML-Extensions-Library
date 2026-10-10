@@ -101,10 +101,9 @@ the manifest against the base and fails on unannounced breaking changes.
 
 `./scripts/validate-libraries.sh` runs the pinned OMG pilot batch validator
 (`scripts/pilot-pin.sh`) over `libraries/` and requires zero errors and zero
-warnings. Four warnings are temporarily allow-listed in
-`validation/allowed-warnings.txt` — the four files that still declare
-`standard library package`; an upstream change to `library package` is being
-ported and those entries will be deleted. The allow-list only shrinks.
+warnings. `validation/allowed-warnings.txt` is empty: no warning is
+allow-listed, and the ratchet fails on any allow-list entry the validator no
+longer emits.
 
 ## License
 

@@ -67,4 +67,4 @@ if [[ "$fail" -ne 0 ]]; then
 fi
 
 count="$(grep -cE '^[^:]+:[0-9]+:[0-9]+: (error|warning): ' <<<"$diagnostics" || true)"
-echo "Validation clean: 0 errors, $count allow-listed warning(s)"
+echo "Validation clean: 0 errors, $count warning(s)"
