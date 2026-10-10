@@ -24,8 +24,10 @@ non-normative OpenSysML library; other tools resolve it when given the
 | MigrationMetadata | MigrationMetadata.sysml | What a migration from another modelling language had to make up because the source left it unstated. | Any SysML v2 tool |
 | OOSEM | OOSEM.sysml | Object-Oriented Systems Engineering Method artefacts, viewpoints and product views. | Any SysML v2 tool |
 | OpenSysMLMathFunctions | OpenSysMLMathFunctions.kerml | exp, ln, log, atan2, ceiling and the Integer quotient the Kernel Function Library omits. | Executing engine |
+| OpenSysMLRenderings | OpenSysMLRenderings.sysml | Renderings and views for case and mixed diagrams. `CaseView`/`asCaseDiagram` is a shorter way to write a standard `GeneralView` filtered on case-family metaclasses; the standard route is added by [OpenSysML#886](https://github.com/Open-MBEE/OpenSysML/pull/886). `MixedView`/`asMixedDiagram` is extension-only. | Any SysML v2 tool |
 | RandomFunctions | RandomFunctions.kerml | Seeded random draws: uniform, uniformInteger, triangular, normal. | Executing engine |
 | Simulation | Simulation.sysml | How a behavior is meant to be run: run count, draw resolution, clock, Monte Carlo. | Executing engine |
+| StateActivity | StateActivity.kerml | `isActive`: a derived Boolean that is true while a state usage is in its state machine's active configuration. | Executing engine |
 | StateMachines | StateMachines.sysml | Pseudostates (choice, junction, shallow/deep history) the grammar has no production for. | Executing engine |
 | StateSpaceIntegration | StateSpaceIntegration.sysml | Fixed-step (Euler/RK4) running of StateSpaceRepresentation dynamics. | Executing engine |
 | Stochastic | Stochastic.sysml | Probability metadata for branches; a tool unaware of it runs the branches as an unweighted choice. | Executing engine |
