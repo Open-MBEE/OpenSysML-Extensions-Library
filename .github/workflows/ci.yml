@@ -134,4 +134,5 @@ jobs:
           fi
           scripts/sync-extension-libraries.sh --source "$EXTENSIONS_DIR"
           make stdlib-snapshot-check || make stdlib-snapshot
-          go test ./internal/workspace/libs/... ./internal/exec/... ./internal/ir/... ./internal/doc/... ./internal/semantic/... ./internal/check/... ./internal/translate/... ./tests/hygiene/...
+          # internal/exec/runtime and internal/exec/smt outlast go test's default 10m on these runners.
+          go test -timeout 60m ./internal/workspace/libs/... ./internal/exec/... ./internal/ir/... ./internal/doc/... ./internal/semantic/... ./internal/check/... ./internal/translate/... ./tests/hygiene/...
