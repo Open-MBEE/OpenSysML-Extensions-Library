@@ -99,6 +99,30 @@ jobs:
           sudo install -m 0755 /tmp/cvc5-bin /usr/local/bin/cvc5
           cvc5 --version | head -1
 
+      # The semantics, solver and check suites read the OMG pilot corpora and the
+      # training corpus from examples/, as OpenSysML's own CI downloads them.
+      - name: Cache the OMG corpora
+        uses: actions/cache@v4
+        with:
+          path: |
+            opensysml/examples/sysml-v2-training
+            opensysml/examples/pilot-corpora
+          key: omg-corpora-${{ hashFiles('opensysml/scripts/download-training-examples.sh', 'opensysml/scripts/download-pilot-corpora.sh', 'opensysml/scripts/pilot-pin.sh') }}
+
+      - name: Download the OMG corpora
+        run: |
+          cd "$GITHUB_WORKSPACE/opensysml"
+          ./scripts/download-training-examples.sh
+          ./scripts/download-pilot-corpora.sh
+          for root in sysml-v2-training pilot-corpora/sysml-examples pilot-corpora/sysml-validation pilot-corpora/kerml-examples; do
+            count=$(find "examples/$root" -type f \( -name '*.sysml' -o -name '*.kerml' \) | wc -l)
+            echo "$root: $count model files"
+            if [ "$count" -eq 0 ]; then
+              echo "error: examples/$root is empty" >&2
+              exit 1
+            fi
+          done
+
       - name: Run OpenSysML against these libraries
         env:
           EXTENSIONS_DIR: ${{ github.workspace }}/extensions
