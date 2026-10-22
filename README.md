@@ -67,7 +67,11 @@ Every tool also needs the OMG standard library (`sysml.library`).
 - **OpenSysML** — bundled: it vendors a pinned copy at
   `internal/workspace/libs/stdlib/OpenSysML Libraries/`, pinned by
   `scripts/extension-libraries-pin.sh` and refreshed by
-  `scripts/sync-extension-libraries.sh`. Edits land here first.
+  `scripts/sync-extension-libraries.sh`. Edits land here first. A newer
+  revision than the bundled one is read as a project interchange archive:
+  name the release `.kpar` beside the model
+  (`sysml -validate model.sysml opensysml-extension-libraries.kpar`) or put it
+  under a `-library-root` directory.
 
 ## Versioning
 
