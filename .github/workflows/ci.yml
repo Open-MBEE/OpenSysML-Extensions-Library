@@ -45,6 +45,9 @@ jobs:
       - name: Check the README library table
         run: ./scripts/check-readme-table.sh
 
+      - name: Check the project manifests against the tree
+        run: ./scripts/write-project-meta.py --check
+
       - name: Check the engine contract
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
@@ -54,13 +57,13 @@ jobs:
           fi
 
       - name: Build the project archive
-        run: ./scripts/build-kpar.py --version "0.0.0-dev.${{ github.run_number }}+${GITHUB_SHA::7}" --output opensysml-extension-libraries-dev.kpar
+        run: ./scripts/build-kpar.py --output opensysml-extensions-library.kpar
 
       - name: Upload the project archive
         uses: actions/upload-artifact@v4
         with:
-          name: opensysml-extension-libraries-dev
-          path: opensysml-extension-libraries-dev.kpar
+          name: opensysml-extensions-library-${{ github.sha }}
+          path: opensysml-extensions-library.kpar
 
   opensysml-mirror:
     name: OpenSysML against these libraries (advisory)

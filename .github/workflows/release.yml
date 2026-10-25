@@ -23,6 +23,18 @@ jobs:
           distribution: temurin
           java-version: '21'
 
+      - name: Assert the tag equals the committed project version
+        run: |
+          version="$(python3 -c 'import json; print(json.load(open(".project.json"))["version"])')"
+          if [ "v${version}" != "$GITHUB_REF_NAME" ]; then
+            echo "error: tag $GITHUB_REF_NAME does not equal .project.json version ${version}; bump the version in a release-prep commit and tag that" >&2
+            exit 1
+          fi
+          echo "tag $GITHUB_REF_NAME matches .project.json version ${version}"
+
+      - name: Check the project manifests against the tree
+        run: ./scripts/write-project-meta.py --check
+
       - name: Verify the pilot pin
         run: ./scripts/verify-pilot-pin.sh
 
@@ -32,15 +44,15 @@ jobs:
       - name: Build the project archive
         run: |
           version="${GITHUB_REF_NAME#v}"
-          ./scripts/build-kpar.py --version "$version" --output "opensysml-extension-libraries-${version}.kpar"
+          ./scripts/build-kpar.py --version "$version" --output "opensysml-extensions-library-${version}.kpar"
 
       - name: Create the release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           version="${GITHUB_REF_NAME#v}"
-          kpar="opensysml-extension-libraries-${version}.kpar"
+          kpar="opensysml-extensions-library-${version}.kpar"
           gh release create "$GITHUB_REF_NAME" "$kpar" \
             --verify-tag \
-            --title "OpenSysML Extension Libraries $GITHUB_REF_NAME" \
-            --notes "KerML 10.3 project archive of the extension libraries at $GITHUB_REF_NAME, validated against the pinned OMG SysML v2 Pilot Implementation."
+            --title "OpenSysML Extensions Library $GITHUB_REF_NAME" \
+            --notes "KerML 10.3 project archive derived from the .project.json and .meta.json of this tag, validated against the pinned OMG SysML v2 Pilot Implementation. The tag's tree is the same project: depend on it as pkg:github/Open-MBEE/OpenSysML-Extensions-Library with versionConstraint ${version}."
