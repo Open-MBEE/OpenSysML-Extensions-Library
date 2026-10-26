@@ -122,10 +122,13 @@ def unit_paths(root: Path) -> list:
 
 
 def root_package(path: Path, text: str) -> str:
-    match = PACKAGE_RE.search(text)
-    if not match:
+    """The one top-level library package a unit declares, outside comments and strings."""
+    names = PACKAGE_RE.findall(COMMENT_OR_STRING_RE.sub(lambda m: " " * len(m.group()), text))
+    if not names:
         raise Failure(f"{path.name} declares no top-level library package")
-    return match.group(1)
+    if len(names) > 1:
+        raise Failure(f"{path.name} declares {len(names)} top-level library packages ({', '.join(names)}); one per file")
+    return names[0]
 
 
 def referenced_roots(text: str) -> tuple:

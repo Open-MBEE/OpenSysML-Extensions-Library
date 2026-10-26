@@ -74,11 +74,10 @@ own `.project.json` (KerML 1.0 §10.3, Table 12):
 
 The IRI is `pkg:git/<host>/<path>`, optionally `@<version>`; a plain clone
 URL with `@<version>` is accepted by package managers and normalised to it. A
-package manager (sysand today, Open-MBEE's SysPI next) installs the repository
-tree at tag `v1.0.0` (or the release's `.kpar`, which holds the same files)
-into the project's library directory — `lib/` or `.sysand/lib` beside
-`.project.json` — and the tool resolves `import DiagramLayout::*` from there;
-the tool itself never fetches. The `usage` entries of this library's own
+package manager installs the repository tree at tag `v1.0.0` (or the release's
+`.kpar`, which holds the same files) into the project's library directory,
+`lib/` beside `.project.json`, and the tool resolves `import DiagramLayout::*`
+from there; the tool itself never fetches. The `usage` entries of this library's own
 `.project.json` name the OMG archives
 (`https://www.omg.org/spec/KerML/20250201/<Library>.kpar`,
 `https://www.omg.org/spec/SysML/20250201/<Library>.kpar`) its units import,
@@ -108,9 +107,9 @@ Every tool also needs the OMG standard library (`sysml.library`).
   `scripts/sync-extension-libraries.sh`. Edits land here first. A newer
   revision than the bundled one is read as a project: name the release `.kpar`
   beside the model (`sysml -validate model.sysml opensysml-extensions-library-1.0.0.kpar`),
-  or install the tag's tree or the `.kpar` under a library root
-  (`sysml -library-root <dir> -validate <project>`) and let the model's
-  `.project.json` use `pkg:git/github.com/Open-MBEE/OpenSysML-Extensions-Library`.
+  or install the tag's tree or the `.kpar` under `lib/` beside the model's
+  `.project.json`, which names it as
+  `pkg:git/github.com/Open-MBEE/OpenSysML-Extensions-Library` (`sysml -validate <project>`).
 
 ## Versioning
 
