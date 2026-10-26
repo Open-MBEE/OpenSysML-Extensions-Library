@@ -55,4 +55,4 @@ jobs:
           gh release create "$GITHUB_REF_NAME" "$kpar" \
             --verify-tag \
             --title "OpenSysML Extensions Library $GITHUB_REF_NAME" \
-            --notes "KerML 10.3 project archive derived from the .project.json and .meta.json of this tag, validated against the pinned OMG SysML v2 Pilot Implementation. The tag's tree is the same project: depend on it as pkg:github/Open-MBEE/OpenSysML-Extensions-Library with versionConstraint ${version}."
+            --notes "KerML 10.3 project archive derived from the .project.json and .meta.json of this tag, validated against the pinned OMG SysML v2 Pilot Implementation. The tag's tree is the same project: depend on it as pkg:git/github.com/Open-MBEE/OpenSysML-Extensions-Library with versionConstraint ${version}."
