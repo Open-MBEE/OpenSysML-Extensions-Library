@@ -34,6 +34,12 @@ with a filter) expresses the same diagram.
 - Never write `standard library package` — that keyword is reserved for the
   OMG standard library and the pilot validator warns on it.
 - A README table row is required; CI checks the table against `libraries/`.
+- Run `./scripts/write-project-meta.py` after changing anything under
+  `libraries/` or `LICENSE` and commit the regenerated `.meta.json`; CI runs
+  it with `--check` and fails when a checksum, the root-namespace index or
+  `.project.json`'s fields and `usage` list drift from the tree. The `usage`
+  list is derived from the imports and qualified references in the units, so
+  a new dependency on an OMG standard-library archive is added there.
 - State the semver impact of your change in the pull request (see Versioning
   in the README).
 
@@ -51,6 +57,15 @@ upstream there first.
 At least one maintainer approval. Changes OpenSysML's runtime depends on need
 a matching OpenSysML pull request that re-pins its vendored copy; edits to
 that vendored copy are not accepted in OpenSysML — they come here.
+
+## Releasing
+
+1. Open a release-prep pull request that sets `version` in `.project.json` to
+   the version the tag will carry (semver per the README); `.meta.json` does
+   not change. CI checks the field.
+2. After it merges, a maintainer tags that commit `vX.Y.Z`. `release.yml`
+   fails when the tag does not equal the committed `version`, otherwise builds
+   the `.kpar` from the manifests and attaches it to the GitHub release.
 
 ## Bumping the pilot pin
 

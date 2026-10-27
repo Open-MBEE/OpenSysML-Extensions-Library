@@ -39,6 +39,15 @@ behavior needs an engine.
 
 ## Layout
 
+The repository is a KerML 10.3 project interchange: `.project.json` at the
+root names the project (`OpenSysML Extensions Library`, publisher `Open-MBEE`,
+its `version`, and the OMG standard-library archives the units use) and
+`.meta.json` indexes the root namespace each unit declares with a SHA-256
+checksum per file, both in the OMG format any SysML v2 tool reads. A tagged
+commit of the tree *is* the project; the release `.kpar` is the same files
+archived. `./scripts/write-project-meta.py --check` fails in CI when either
+manifest drifts from the tree.
+
 `libraries/` is flat: one `library package` per file, and the file stem equals
 the package name. SysML resolves libraries by package name, not path, so any
 tool can load the directory as-is. The folder these files used to live in,
@@ -47,6 +56,34 @@ was imported from Open-MBEE/OpenSysML, and old `#N` references in commit
 messages point at that repository.
 
 ## Using the libraries
+
+### As a package
+
+A project depends on this library by naming the repository and a tag in its
+own `.project.json` (KerML 1.0 §10.3, Table 12):
+
+```json
+{
+  "name": "MyModel",
+  "version": "0.1.0",
+  "usage": [
+    {"resource": "pkg:git/github.com/Open-MBEE/OpenSysML-Extensions-Library", "versionConstraint": "1.0.0"}
+  ]
+}
+```
+
+The IRI is `pkg:git/<host>/<path>`, optionally `@<version>`; a plain clone
+URL with `@<version>` is accepted by package managers and normalised to it. A
+package manager installs the repository tree at tag `v1.0.0` (or the release's
+`.kpar`, which holds the same files) into the project's library directory,
+`lib/` beside `.project.json`, and the tool resolves `import DiagramLayout::*`
+from there; the tool itself never fetches. The `usage` entries of this library's own
+`.project.json` name the OMG archives
+(`https://www.omg.org/spec/KerML/20250201/<Library>.kpar`,
+`https://www.omg.org/spec/SysML/20250201/<Library>.kpar`) its units import,
+so a manager installs the standard library the same way.
+
+### Per tool
 
 Every tool also needs the OMG standard library (`sysml.library`).
 
@@ -68,10 +105,11 @@ Every tool also needs the OMG standard library (`sysml.library`).
   `internal/workspace/libs/stdlib/OpenSysML Libraries/`, pinned by
   `scripts/extension-libraries-pin.sh` and refreshed by
   `scripts/sync-extension-libraries.sh`. Edits land here first. A newer
-  revision than the bundled one is read as a project interchange archive:
-  name the release `.kpar` beside the model
-  (`sysml -validate model.sysml opensysml-extension-libraries.kpar`) or put it
-  under a `-library-root` directory.
+  revision than the bundled one is read as a project: name the release `.kpar`
+  beside the model (`sysml -validate model.sysml opensysml-extensions-library-1.0.0.kpar`),
+  or install the tag's tree or the `.kpar` under `lib/` beside the model's
+  `.project.json`, which names it as
+  `pkg:git/github.com/Open-MBEE/OpenSysML-Extensions-Library` (`sysml -validate <project>`).
 
 ## Versioning
 
@@ -83,8 +121,17 @@ Releases are semver tags `vX.Y.Z` on `main`:
 - **PATCH** — documentation and doc-comment changes and fixes that keep names
   and meaning.
 
-Each release attaches a `.kpar` project archive. Consumers pin a tag or
-commit.
+The tag equals `.project.json`'s `version`: a release-prep commit bumps the
+`version` field (and nothing else need change — `.meta.json` carries no
+version), then the maintainer tags `vX.Y.Z` on that commit. The release
+workflow refuses a tag that does not equal the committed `version`, re-checks
+the manifests against the tree, builds
+`opensysml-extensions-library-X.Y.Z.kpar` with `./scripts/build-kpar.py
+--version X.Y.Z` and attaches it to the GitHub release. The archive is derived
+from the tag's tree and its two manifests, so the tree a package manager
+installs from GitHub and the `.kpar` are one project; the build is
+byte-deterministic (sorted entries, deflate, 1980-01-01 dates). Consumers pin
+a tag through `versionConstraint`.
 
 ## Engine contract
 
