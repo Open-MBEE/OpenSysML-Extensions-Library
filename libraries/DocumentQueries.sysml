@@ -237,8 +237,10 @@ library package DocumentQueries {
 		in source : Element[0..*] ordered;
 		in properties : String[0..*] ordered default null;
 		in columns : ColumnSpec[0..*] ordered default null;
-		/* A property an element row lacks is a path error naming that element and
-		 * the features it does have; tolerate = true keeps today's empty cell. */
+		/* A property an element row lacks — a feature name, or a dotted member path
+		 * whose segment names no member on that row — is a path error naming the
+		 * element and the features it does have; tolerate = true keeps the empty
+		 * cell. A Column path is a computed cell and stays absent, as documented above. */
 		in tolerate : Boolean[1] default false;
 		return result : Element[0..*] ordered;
 	}
