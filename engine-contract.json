@@ -468,6 +468,13 @@
       ]
     },
     {
+      "name": "DocumentQueries::Differ",
+      "kind": "document",
+      "consumers": [
+        "internal/ir/queryplan/compiler.go"
+      ]
+    },
+    {
       "name": "DocumentQueries::Verdict",
       "kind": "document",
       "consumers": [
