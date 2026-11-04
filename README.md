@@ -21,6 +21,7 @@ non-normative OpenSysML library; other tools resolve it when given the
 | DocumentQueries | DocumentQueries.sysml | Calc definitions (OwnedElements, Descendants, Ancestors, …) that document views evaluate to select elements. | Executing engine |
 | IdentityMetadata | IdentityMetadata.sysml | Binds notation to repository element identity. | Any SysML v2 tool |
 | MOSA | MOSA.sysml | Modular Open Systems Approach (10 U.S.C. § 4401) vocabulary. | Any SysML v2 tool |
+| NPR7123 | NPR7123.sysml | NASA NPR 7123.1D systems-engineering vocabulary: the 17 common technical processes, life-cycle reviews with the Appendix G entrance/success criteria, work-product maturity (Table 5-1, Appendix F), TRLs, the active SE requirements and the Appendix H compliance matrix. | Any SysML v2 tool |
 | MigrationMetadata | MigrationMetadata.sysml | What a migration from another modelling language had to make up because the source left it unstated. | Any SysML v2 tool |
 | OOSEM | OOSEM.sysml | Object-Oriented Systems Engineering Method artefacts, viewpoints and product views. | Any SysML v2 tool |
 | OpenSysMLMathFunctions | OpenSysMLMathFunctions.kerml | exp, ln, log, atan2, ceiling and the Integer quotient the Kernel Function Library omits. | Executing engine |
