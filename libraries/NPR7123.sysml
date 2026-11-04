@@ -5018,294 +5018,481 @@ library package NPR7123 {
 	/* Semantic metadata: the user-defined keywords of the library */
 
 	metadata def <technicalProcess> TechnicalProcessMetadata :> SemanticMetadata {
+		doc /* The `#technicalProcess` keyword: classifies an action definition or action usage as a
+		 * technicalProcesse by applying the definition and the `technicalProcesses` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = technicalProcesses meta SysML::Usage;
 	}
 
 	metadata def <stakeholderExpectationsDefinition> StakeholderExpectationsDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#stakeholderExpectationsDefinition` keyword: classifies an action definition or
+		 * action usage as a stakeholderExpectationsDefinition by applying the definition and the
+		 * `stakeholderExpectationsDefinitions` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = stakeholderExpectationsDefinitions meta SysML::Usage;
 	}
 
 	metadata def <technicalRequirementsDefinition> TechnicalRequirementsDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#technicalRequirementsDefinition` keyword: classifies an action definition or action
+		 * usage as a technicalRequirementsDefinition by applying the definition and the
+		 * `technicalRequirementsDefinitions` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = technicalRequirementsDefinitions meta SysML::Usage;
 	}
 
 	metadata def <logicalDecomposition> LogicalDecompositionMetadata :> SemanticMetadata {
+		doc /* The `#logicalDecomposition` keyword: classifies an action definition or action usage as a
+		 * logicalDecomposition by applying the definition and the `logicalDecompositions` base
+		 * usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = logicalDecompositions meta SysML::Usage;
 	}
 
 	metadata def <designSolutionDefinition> DesignSolutionDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#designSolutionDefinition` keyword: classifies an action definition or action usage
+		 * as a designSolutionDefinition by applying the definition and the
+		 * `designSolutionDefinitions` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = designSolutionDefinitions meta SysML::Usage;
 	}
 
 	metadata def <productImplementation> ProductImplementationMetadata :> SemanticMetadata {
+		doc /* The `#productImplementation` keyword: classifies an action definition or action usage as
+		 * a productImplementation by applying the definition and the `productImplementations` base
+		 * usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = productImplementations meta SysML::Usage;
 	}
 
 	metadata def <productIntegration> ProductIntegrationMetadata :> SemanticMetadata {
+		doc /* The `#productIntegration` keyword: classifies an action definition or action usage as a
+		 * productIntegration by applying the definition and the `productIntegrations` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = productIntegrations meta SysML::Usage;
 	}
 
 	metadata def <productVerification> ProductVerificationMetadata :> SemanticMetadata {
+		doc /* The `#productVerification` keyword: classifies an action definition or action usage as a
+		 * productVerification by applying the definition and the `productVerifications` base usage
+		 * at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = productVerifications meta SysML::Usage;
 	}
 
 	metadata def <productValidation> ProductValidationMetadata :> SemanticMetadata {
+		doc /* The `#productValidation` keyword: classifies an action definition or action usage as a
+		 * productValidation by applying the definition and the `productValidations` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = productValidations meta SysML::Usage;
 	}
 
 	metadata def <productTransition> ProductTransitionMetadata :> SemanticMetadata {
+		doc /* The `#productTransition` keyword: classifies an action definition or action usage as a
+		 * productTransition by applying the definition and the `productTransitions` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = productTransitions meta SysML::Usage;
 	}
 
 	metadata def <technicalPlanning> TechnicalPlanningMetadata :> SemanticMetadata {
+		doc /* The `#technicalPlanning` keyword: classifies an action definition or action usage as a
+		 * technicalPlanning by applying the definition and the `technicalPlannings` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = technicalPlannings meta SysML::Usage;
 	}
 
 	metadata def <requirementsManagement> RequirementsManagementMetadata :> SemanticMetadata {
+		doc /* The `#requirementsManagement` keyword: classifies an action definition or action usage as
+		 * a requirementsManagement by applying the definition and the `requirementsManagements`
+		 * base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = requirementsManagements meta SysML::Usage;
 	}
 
 	metadata def <interfaceManagement> InterfaceManagementMetadata :> SemanticMetadata {
+		doc /* The `#interfaceManagement` keyword: classifies an action definition or action usage as a
+		 * interfaceManagement by applying the definition and the `interfaceManagements` base usage
+		 * at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = interfaceManagements meta SysML::Usage;
 	}
 
 	metadata def <technicalRiskManagement> TechnicalRiskManagementMetadata :> SemanticMetadata {
+		doc /* The `#technicalRiskManagement` keyword: classifies an action definition or action usage
+		 * as a technicalRiskManagement by applying the definition and the
+		 * `technicalRiskManagements` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = technicalRiskManagements meta SysML::Usage;
 	}
 
 	metadata def <configurationManagement> ConfigurationManagementMetadata :> SemanticMetadata {
+		doc /* The `#configurationManagement` keyword: classifies an action definition or action usage
+		 * as a configurationManagement by applying the definition and the
+		 * `configurationManagements` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = configurationManagements meta SysML::Usage;
 	}
 
 	metadata def <technicalDataManagement> TechnicalDataManagementMetadata :> SemanticMetadata {
+		doc /* The `#technicalDataManagement` keyword: classifies an action definition or action usage
+		 * as a technicalDataManagement by applying the definition and the
+		 * `technicalDataManagements` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = technicalDataManagements meta SysML::Usage;
 	}
 
 	metadata def <technicalAssessment> TechnicalAssessmentMetadata :> SemanticMetadata {
+		doc /* The `#technicalAssessment` keyword: classifies an action definition or action usage as a
+		 * technicalAssessment by applying the definition and the `technicalAssessments` base usage
+		 * at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = technicalAssessments meta SysML::Usage;
 	}
 
 	metadata def <decisionAnalysis> DecisionAnalysisMetadata :> SemanticMetadata {
+		doc /* The `#decisionAnalysis` keyword: classifies an action definition or action usage as a
+		 * decisionAnalysis by applying the definition and the `decisionAnalysiss` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = decisionAnalysiss meta SysML::Usage;
 	}
 
 	metadata def <keyDecisionPoint> KeyDecisionPointMetadata :> SemanticMetadata {
+		doc /* The `#keyDecisionPoint` keyword: classifies an occurrence definition or occurrence usage
+		 * as a keyDecisionPoint by applying the definition and the `keyDecisionPoints` base usage
+		 * at once.
+		 */
 		:> annotatedElement : SysML::OccurrenceDefinition;
 		:> annotatedElement : SysML::OccurrenceUsage;
 		:>> baseType = keyDecisionPoints meta SysML::Usage;
 	}
 
 	metadata def <technicalReview> TechnicalReviewMetadata :> SemanticMetadata {
+		doc /* The `#technicalReview` keyword: classifies an action definition or action usage as a
+		 * technicalReview by applying the definition and the `technicalReviews` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = technicalReviews meta SysML::Usage;
 	}
 
 	metadata def <lifeCycleReview> LifeCycleReviewMetadata :> SemanticMetadata {
+		doc /* The `#lifeCycleReview` keyword: classifies an action definition or action usage as a
+		 * lifeCycleReview by applying the definition and the `lifeCycleReviews` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = lifeCycleReviews meta SysML::Usage;
 	}
 
 	metadata def <peerReview> PeerReviewMetadata :> SemanticMetadata {
+		doc /* The `#peerReview` keyword: classifies an action definition or action usage as a
+		 * peerReview by applying the definition and the `peerReviews` base usage at once.
+		 */
 		:> annotatedElement : SysML::ActionDefinition;
 		:> annotatedElement : SysML::ActionUsage;
 		:>> baseType = peerReviews meta SysML::Usage;
 	}
 
 	metadata def <entranceCriterion> EntranceCriterionMetadata :> SemanticMetadata {
+		doc /* The `#entranceCriterion` keyword: classifies an requirement definition or requirement
+		 * usage as a reviewEntranceCriteria by applying the definition and the
+		 * `reviewEntranceCriteria` base usage at once.
+		 */
 		:> annotatedElement : SysML::RequirementDefinition;
 		:> annotatedElement : SysML::RequirementUsage;
 		:>> baseType = reviewEntranceCriteria meta SysML::Usage;
 	}
 
 	metadata def <successCriterion> SuccessCriterionMetadata :> SemanticMetadata {
+		doc /* The `#successCriterion` keyword: classifies an requirement definition or requirement
+		 * usage as a reviewSuccessCriteria by applying the definition and the
+		 * `reviewSuccessCriteria` base usage at once.
+		 */
 		:> annotatedElement : SysML::RequirementDefinition;
 		:> annotatedElement : SysML::RequirementUsage;
 		:>> baseType = reviewSuccessCriteria meta SysML::Usage;
 	}
 
 	metadata def <reviewItem> ReviewItemMetadata :> SemanticMetadata {
+		doc /* The `#reviewItem` keyword: classifies an item definition or item usage as a reviewItem by
+		 * applying the definition and the `reviewItems` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = reviewItems meta SysML::Usage;
 	}
 
 	metadata def <workProduct> WorkProductMetadata :> SemanticMetadata {
+		doc /* The `#workProduct` keyword: classifies an item definition or item usage as a workProduct
+		 * by applying the definition and the `workProducts` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = workProducts meta SysML::Usage;
 	}
 
 	metadata def <stakeholderIdentificationAndExpectationsDefinition> StakeholderIdentificationAndExpectationsDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#stakeholderIdentificationAndExpectationsDefinition` keyword: classifies an item
+		 * definition or item usage as a stakeholderIdentificationAndExpectationsDefinition by
+		 * applying the definition and the `stakeholderIdentificationAndExpectationsDefinitions`
+		 * base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = stakeholderIdentificationAndExpectationsDefinitions meta SysML::Usage;
 	}
 
 	metadata def <conceptDefinition> ConceptDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#conceptDefinition` keyword: classifies an item definition or item usage as a
+		 * conceptDefinition by applying the definition and the `conceptDefinitions` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = conceptDefinitions meta SysML::Usage;
 	}
 
 	metadata def <measureOfEffectivenessDefinition> MeasureOfEffectivenessDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#measureOfEffectivenessDefinition` keyword: classifies an item definition or item
+		 * usage as a measureOfEffectivenessDefinition by applying the definition and the
+		 * `measureOfEffectivenessDefinitions` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = measureOfEffectivenessDefinitions meta SysML::Usage;
 	}
 
 	metadata def <costAndScheduleForTechnicalImplementation> CostAndScheduleForTechnicalImplementationMetadata :> SemanticMetadata {
+		doc /* The `#costAndScheduleForTechnicalImplementation` keyword: classifies an item definition
+		 * or item usage as a costAndScheduleForTechnicalImplementation by applying the definition
+		 * and the `costAndScheduleForTechnicalImplementations` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = costAndScheduleForTechnicalImplementations meta SysML::Usage;
 	}
 
 	metadata def <requirementSet> RequirementSetMetadata :> SemanticMetadata {
+		doc /* The `#requirementSet` keyword: classifies an item definition or item usage as a
+		 * requirementSet by applying the definition and the `requirementSets` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = requirementSets meta SysML::Usage;
 	}
 
 	metadata def <technicalPerformanceMeasureDefinition> TechnicalPerformanceMeasureDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#technicalPerformanceMeasureDefinition` keyword: classifies an item definition or
+		 * item usage as a technicalPerformanceMeasureDefinition by applying the definition and the
+		 * `technicalPerformanceMeasureDefinitions` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = technicalPerformanceMeasureDefinitions meta SysML::Usage;
 	}
 
 	metadata def <humanSystemsIntegrationApproach> HumanSystemsIntegrationApproachMetadata :> SemanticMetadata {
+		doc /* The `#humanSystemsIntegrationApproach` keyword: classifies an item definition or item
+		 * usage as a humanSystemsIntegrationApproach by applying the definition and the
+		 * `humanSystemsIntegrationApproachs` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = humanSystemsIntegrationApproachs meta SysML::Usage;
 	}
 
 	metadata def <architectureDefinition> ArchitectureDefinitionMetadata :> SemanticMetadata {
+		doc /* The `#architectureDefinition` keyword: classifies an item definition or item usage as a
+		 * architectureDefinition by applying the definition and the `architectureDefinitions` base
+		 * usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = architectureDefinitions meta SysML::Usage;
 	}
 
 	metadata def <allocationOfRequirementsToNextLowerLevel> AllocationOfRequirementsToNextLowerLevelMetadata :> SemanticMetadata {
+		doc /* The `#allocationOfRequirementsToNextLowerLevel` keyword: classifies an item definition or
+		 * item usage as a allocationOfRequirementsToNextLowerLevel by applying the definition and
+		 * the `allocationOfRequirementsToNextLowerLevels` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = allocationOfRequirementsToNextLowerLevels meta SysML::Usage;
 	}
 
 	metadata def <requiredLeadingIndicatorTrends> RequiredLeadingIndicatorTrendsMetadata :> SemanticMetadata {
+		doc /* The `#requiredLeadingIndicatorTrends` keyword: classifies an item definition or item
+		 * usage as a requiredLeadingIndicatorTrends by applying the definition and the
+		 * `requiredLeadingIndicatorTrendss` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = requiredLeadingIndicatorTrendss meta SysML::Usage;
 	}
 
 	metadata def <designSolution> DesignSolutionMetadata :> SemanticMetadata {
+		doc /* The `#designSolution` keyword: classifies an item definition or item usage as a
+		 * designSolution by applying the definition and the `designSolutions` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = designSolutions meta SysML::Usage;
 	}
 
 	metadata def <interfaceDefinitionProduct> InterfaceDefinitionProductMetadata :> SemanticMetadata {
+		doc /* The `#interfaceDefinitionProduct` keyword: classifies an item definition or item usage as
+		 * a interfaceDefinitionProduct by applying the definition and the
+		 * `interfaceDefinitionProducts` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = interfaceDefinitionProducts meta SysML::Usage;
 	}
 
 	metadata def <implementationPlan> ImplementationPlanMetadata :> SemanticMetadata {
+		doc /* The `#implementationPlan` keyword: classifies an item definition or item usage as a
+		 * implementationPlan by applying the definition and the `implementationPlans` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = implementationPlans meta SysML::Usage;
 	}
 
 	metadata def <integrationPlan> IntegrationPlanMetadata :> SemanticMetadata {
+		doc /* The `#integrationPlan` keyword: classifies an item definition or item usage as a
+		 * integrationPlan by applying the definition and the `integrationPlans` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = integrationPlans meta SysML::Usage;
 	}
 
 	metadata def <verificationAndValidationPlan> VerificationAndValidationPlanMetadata :> SemanticMetadata {
+		doc /* The `#verificationAndValidationPlan` keyword: classifies an item definition or item usage
+		 * as a verificationAndValidationPlan by applying the definition and the
+		 * `verificationAndValidationPlans` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = verificationAndValidationPlans meta SysML::Usage;
 	}
 
 	metadata def <verificationAndValidationResults> VerificationAndValidationResultsMetadata :> SemanticMetadata {
+		doc /* The `#verificationAndValidationResults` keyword: classifies an item definition or item
+		 * usage as a verificationAndValidationResults by applying the definition and the
+		 * `verificationAndValidationResultss` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = verificationAndValidationResultss meta SysML::Usage;
 	}
 
 	metadata def <transportationCriteriaAndInstructions> TransportationCriteriaAndInstructionsMetadata :> SemanticMetadata {
+		doc /* The `#transportationCriteriaAndInstructions` keyword: classifies an item definition or
+		 * item usage as a transportationCriteriaAndInstructions by applying the definition and the
+		 * `transportationCriteriaAndInstructionss` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = transportationCriteriaAndInstructionss meta SysML::Usage;
 	}
 
 	metadata def <certificationForFlightOrUse> CertificationForFlightOrUseMetadata :> SemanticMetadata {
+		doc /* The `#certificationForFlightOrUse` keyword: classifies an item definition or item usage
+		 * as a certificationForFlightOrUse by applying the definition and the
+		 * `certificationForFlightOrUses` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = certificationForFlightOrUses meta SysML::Usage;
 	}
 
 	metadata def <decommissioningPlan> DecommissioningPlanMetadata :> SemanticMetadata {
+		doc /* The `#decommissioningPlan` keyword: classifies an item definition or item usage as a
+		 * decommissioningPlan by applying the definition and the `decommissioningPlans` base usage
+		 * at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = decommissioningPlans meta SysML::Usage;
 	}
 
 	metadata def <disposalPlan> DisposalPlanMetadata :> SemanticMetadata {
+		doc /* The `#disposalPlan` keyword: classifies an item definition or item usage as a
+		 * disposalPlan by applying the definition and the `disposalPlans` base usage at once.
+		 */
 		:> annotatedElement : SysML::ItemDefinition;
 		:> annotatedElement : SysML::ItemUsage;
 		:>> baseType = disposalPlans meta SysML::Usage;
 	}
 
 	metadata def <semp> SEMPMetadata :> SemanticMetadata {
+		doc /* The `#semp` keyword: classifies an part definition or part usage as a semp by applying
+		 * the definition and the `semps` base usage at once.
+		 */
 		:> annotatedElement : SysML::PartDefinition;
 		:> annotatedElement : SysML::PartUsage;
 		:>> baseType = semps meta SysML::Usage;
 	}
 
 	metadata def <technicalAuthority> TechnicalAuthorityMetadata :> SemanticMetadata {
+		doc /* The `#technicalAuthority` keyword: classifies an part definition or part usage as a
+		 * technicalAuthoritie by applying the definition and the `technicalAuthorities` base usage
+		 * at once.
+		 */
 		:> annotatedElement : SysML::PartDefinition;
 		:> annotatedElement : SysML::PartUsage;
 		:>> baseType = technicalAuthorities meta SysML::Usage;
 	}
 
 	metadata def <seRequirement> SERequirementMetadata :> SemanticMetadata {
+		doc /* The `#seRequirement` keyword: classifies an requirement definition or requirement usage
+		 * as a seRequirement by applying the definition and the `seRequirements` base usage at
+		 * once.
+		 */
 		:> annotatedElement : SysML::RequirementDefinition;
 		:> annotatedElement : SysML::RequirementUsage;
 		:>> baseType = seRequirements meta SysML::Usage;
