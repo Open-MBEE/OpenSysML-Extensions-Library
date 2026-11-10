@@ -25,6 +25,7 @@ non-normative OpenSysML library; other tools resolve it when given the
 | OOSEM | OOSEM.sysml | Object-Oriented Systems Engineering Method artefacts, viewpoints and product views. | Any SysML v2 tool |
 | OpenSysMLMathFunctions | OpenSysMLMathFunctions.kerml | exp, ln, log, atan2, ceiling and the Integer quotient the Kernel Function Library omits. | Executing engine |
 | OpenSysMLRenderings | OpenSysMLRenderings.sysml | Renderings and views for case and mixed diagrams. `CaseView`/`asCaseDiagram` is a shorter way to write a standard `GeneralView` filtered on case-family metaclasses; the standard route is added by [OpenSysML#886](https://github.com/Open-MBEE/OpenSysML/pull/886). `MixedView`/`asMixedDiagram` is extension-only. | Any SysML v2 tool |
+| QVTS | QVTS.sysml | The shape of a query result: `QueryResult`, a view that exposes the elements a query selected and states the query, its source, its `Outcome` (established, path error or model error) and its provenance. Specified by [Open-MBEE/qvts](https://github.com/Open-MBEE/qvts). | Any SysML v2 tool |
 | RandomFunctions | RandomFunctions.kerml | Seeded random draws: uniform, uniformInteger, triangular, normal. | Executing engine |
 | Simulation | Simulation.sysml | How a behavior is meant to be run: run count, draw resolution, clock, Monte Carlo. | Executing engine |
 | StateActivity | StateActivity.kerml | `isActive`: a derived Boolean that is true while a state usage is in its state machine's active configuration. | Executing engine |
