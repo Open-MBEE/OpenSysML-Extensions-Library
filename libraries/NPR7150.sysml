@@ -2160,568 +2160,568 @@ library package NPR7150 {
 		 * 065a to 065d, one per item of the requirement, and the names keep the letter.
 		 */
 
-		requirement def <'SA-033-1'> SA033_1 :> SATask {
+		requirement def <'SWE-033-SA-1'> SA033_1 :> SATask {
 			doc /* Confirm that the options for software acquisition versus development have been
 			 * evaluated.
 			 */
-			:>> id = "SA-033-1";
+			:>> id = "SWE-033-SA-1";
 			:>> sweId = "SWE-033";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-033-2'> SA033_2 :> SATask {
+		requirement def <'SWE-033-SA-2'> SA033_2 :> SATask {
 			doc /* Confirm the flow down of applicable software engineering, software assurance, and
 			 * software safety requirements on all acquisition activities. (NPR 7150.2 and
 			 * NASA-STD-8739.8).
 			 */
-			:>> id = "SA-033-2";
+			:>> id = "SWE-033-SA-2";
 			:>> sweId = "SWE-033";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-033-3'> SA033_3 :> SATask {
+		requirement def <'SWE-033-SA-3'> SA033_3 :> SATask {
 			doc /* Assess any risks with acquisition versus development decision(s).
 			 */
-			:>> id = "SA-033-3";
+			:>> id = "SWE-033-SA-3";
 			:>> sweId = "SWE-033";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-013-1'> SA013_1 :> SATask {
+		requirement def <'SWE-013-SA-1'> SA013_1 :> SATask {
 			doc /* Confirm that all plans, including security plans, are in place and have expected
 			 * content for the life cycle events, with proper tailoring for the classification of
 			 * the software.
 			 */
-			:>> id = "SA-013-1";
+			:>> id = "SWE-013-SA-1";
 			:>> sweId = "SWE-013";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-013-2'> SA013_2 :> SATask {
+		requirement def <'SWE-013-SA-2'> SA013_2 :> SATask {
 			doc /* Develop and maintain a Software Assurance Plan following the content defined in
 			 * NASA-HDBK-2203 for a software assurance plan, including software safety.
 			 */
-			:>> id = "SA-013-2";
+			:>> id = "SWE-013-SA-2";
 			:>> sweId = "SWE-013";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-024-1'> SA024_1 :> SATask {
+		requirement def <'SWE-024-SA-1'> SA024_1 :> SATask {
 			doc /* Assess plans for compliance with NPR 7150.2 requirements, NASA-STD-8739.8,
 			 * including changes to commitments.
 			 */
-			:>> id = "SA-024-1";
+			:>> id = "SWE-024-SA-1";
 			:>> sweId = "SWE-024";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-024-2'> SA024_2 :> SATask {
+		requirement def <'SWE-024-SA-2'> SA024_2 :> SATask {
 			doc /* Confirm that closure of corrective actions associated with the performance of
 			 * software activities against the software plans, including closure rationale.
 			 */
-			:>> id = "SA-024-2";
+			:>> id = "SWE-024-SA-2";
 			:>> sweId = "SWE-024";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-024-3'> SA024_3 :> SATask {
+		requirement def <'SWE-024-SA-3'> SA024_3 :> SATask {
 			doc /* Confirm changes to commitments are recorded and managed.
 			 */
-			:>> id = "SA-024-3";
+			:>> id = "SWE-024-SA-3";
 			:>> sweId = "SWE-024";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-034-1'> SA034_1 :> SATask {
+		requirement def <'SWE-034-SA-1'> SA034_1 :> SATask {
 			doc /* Confirm software acceptance criteria are defined and assess the criteria based on
 			 * guidance in the NASA Software Engineering Handbook, NASA- HDBK-2203.
 			 */
-			:>> id = "SA-034-1";
+			:>> id = "SWE-034-SA-1";
 			:>> sweId = "SWE-034";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-036-1'> SA036_1 :> SATask {
+		requirement def <'SWE-036-SA-1'> SA036_1 :> SATask {
 			doc /* Confirm the following are approved, implemented, and updated per requirements: a.
 			 * Software processes, including software assurance, software safety, and IV&V
 			 * processes, b. Software documentation plans, c. List of developed electronic products,
 			 * deliverables, and for the project's d. List of tasks required or needed software
 			 * development.
 			 */
-			:>> id = "SA-036-1";
+			:>> id = "SWE-036-SA-1";
 			:>> sweId = "SWE-036";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-036-2'> SA036_2 :> SATask {
+		requirement def <'SWE-036-SA-2'> SA036_2 :> SATask {
 			doc /* Confirm that any required government actions are established and performed upon
 			 * receipt of deliverables (e.g., approvals, reviews).
 			 */
-			:>> id = "SA-036-2";
+			:>> id = "SWE-036-SA-2";
 			:>> sweId = "SWE-036";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-037-1'> SA037_1 :> SATask {
+		requirement def <'SWE-037-SA-1'> SA037_1 :> SATask {
 			doc /* Confirm that milestones for reviewing and auditing software developer progress
 			 * are defined and documented.
 			 */
-			:>> id = "SA-037-1";
+			:>> id = "SWE-037-SA-1";
 			:>> sweId = "SWE-037";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-037-2'> SA037_2 :> SATask {
+		requirement def <'SWE-037-SA-2'> SA037_2 :> SATask {
 			doc /* Participate in project milestones reviews.
 			 */
-			:>> id = "SA-037-2";
+			:>> id = "SWE-037-SA-2";
 			:>> sweId = "SWE-037";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-039-1'> SA039_1 :> SATask {
+		requirement def <'SWE-039-SA-1'> SA039_1 :> SATask {
 			doc /* Confirm that software developer(s) periodically report status and provide insight
 			 * to the project manager.
 			 */
-			:>> id = "SA-039-1";
+			:>> id = "SWE-039-SA-1";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-039-2'> SA039_2 :> SATask {
+		requirement def <'SWE-039-SA-2'> SA039_2 :> SATask {
 			doc /* Monitor product integration.
 			 */
-			:>> id = "SA-039-2";
+			:>> id = "SWE-039-SA-2";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-039-3'> SA039_3 :> SATask {
+		requirement def <'SWE-039-SA-3'> SA039_3 :> SATask {
 			doc /* Analyze the verification activities to ensure adequacy.
 			 */
-			:>> id = "SA-039-3";
+			:>> id = "SWE-039-SA-3";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-039-4'> SA039_4 :> SATask {
+		requirement def <'SWE-039-SA-4'> SA039_4 :> SATask {
 			doc /* Assess trade studies, source data, software reviews, and technical interchange
 			 * meetings.
 			 */
-			:>> id = "SA-039-4";
+			:>> id = "SWE-039-SA-4";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-039-5'> SA039_5 :> SATask {
+		requirement def <'SWE-039-SA-5'> SA039_5 :> SATask {
 			doc /* Perform audits on software development processes and practices at least once
 			 * every two years.
 			 */
-			:>> id = "SA-039-5";
+			:>> id = "SWE-039-SA-5";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 5;
 		}
 
-		requirement def <'SA-039-6'> SA039_6 :> SATask {
+		requirement def <'SWE-039-SA-6'> SA039_6 :> SATask {
 			doc /* Develop and provide status reports.
 			 */
-			:>> id = "SA-039-6";
+			:>> id = "SWE-039-SA-6";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 6;
 		}
 
-		requirement def <'SA-039-7'> SA039_7 :> SATask {
+		requirement def <'SWE-039-SA-7'> SA039_7 :> SATask {
 			doc /* Develop and maintain a list of all software assurance review discrepancies,
 			 * risks, issues, findings, and concerns.
 			 */
-			:>> id = "SA-039-7";
+			:>> id = "SWE-039-SA-7";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 7;
 		}
 
-		requirement def <'SA-039-8'> SA039_8 :> SATask {
+		requirement def <'SWE-039-SA-8'> SA039_8 :> SATask {
 			doc /* Confirm that the project manager provides responses to software assurance and
 			 * software safety submitted issues, findings, and risks and that the project manager
 			 * tracks software assurance and software safety issues, findings, and risks to closure.
 			 */
-			:>> id = "SA-039-8";
+			:>> id = "SWE-039-SA-8";
 			:>> sweId = "SWE-039";
 			:>> taskNumber = 8;
 		}
 
-		requirement def <'SA-040-1'> SA040_1 :> SATask {
+		requirement def <'SWE-040-SA-1'> SA040_1 :> SATask {
 			doc /* Confirm that software artifacts are available in electronic format to NASA.
 			 */
-			:>> id = "SA-040-1";
+			:>> id = "SWE-040-SA-1";
 			:>> sweId = "SWE-040";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-042-1'> SA042_1 :> SATask {
+		requirement def <'SWE-042-SA-1'> SA042_1 :> SATask {
 			doc /* Confirm that software developers provide NASA with electronic access to the
 			 * source code generated for the project in a modifiable form.
 			 */
-			:>> id = "SA-042-1";
+			:>> id = "SWE-042-SA-1";
 			:>> sweId = "SWE-042";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-139-1'> SA139_1 :> SATask {
+		requirement def <'SWE-139-SA-1'> SA139_1 :> SATask {
 			doc /* Assess that the project's software requirements, products, procedures, and
 			 * processes are compliant with the NPR 7150.2 requirements per the software
 			 * classification and safety criticality for software.
 			 */
-			:>> id = "SA-139-1";
+			:>> id = "SWE-139-SA-1";
 			:>> sweId = "SWE-139";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-121-1'> SA121_1 :> SATask {
+		requirement def <'SWE-121-SA-1'> SA121_1 :> SATask {
 			doc /* Confirm that any requirement tailoring in the Requirements Mapping Matrix has the
 			 * required approvals.
 			 */
-			:>> id = "SA-121-1";
+			:>> id = "SWE-121-SA-1";
 			:>> sweId = "SWE-121";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-121-2'> SA121_2 :> SATask {
+		requirement def <'SWE-121-SA-2'> SA121_2 :> SATask {
 			doc /* Develop a tailoring matrix of software assurance and software safety
 			 * requirements.
 			 */
-			:>> id = "SA-121-2";
+			:>> id = "SWE-121-SA-2";
 			:>> sweId = "SWE-121";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-125-1'> SA125_1 :> SATask {
+		requirement def <'SWE-125-SA-1'> SA125_1 :> SATask {
 			doc /* Confirm that the project maintains a requirements mapping matrix (matrices) for
 			 * all requirements in NPR 7150.2.
 			 */
-			:>> id = "SA-125-1";
+			:>> id = "SWE-125-SA-1";
 			:>> sweId = "SWE-125";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-125-2'> SA125_2 :> SATask {
+		requirement def <'SWE-125-SA-2'> SA125_2 :> SATask {
 			doc /* Maintain the requirements mapping matrix (matrices) for requirements in
 			 * NASA-STD-8739.8.
 			 */
-			:>> id = "SA-125-2";
+			:>> id = "SWE-125-SA-2";
 			:>> sweId = "SWE-125";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-027-1'> SA027_1 :> SATask {
+		requirement def <'SWE-027-SA-1'> SA027_1 :> SATask {
 			doc /* Confirm that the conditions listed in "a" through "f" are complete for any COTS,
 			 * GOTS, MOTS, OSS, or reused software that is acquired or used.
 			 */
-			:>> id = "SA-027-1";
+			:>> id = "SWE-027-SA-1";
 			:>> sweId = "SWE-027";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-015-1'> SA015_1 :> SATask {
+		requirement def <'SWE-015-SA-1'> SA015_1 :> SATask {
 			doc /* Confirm that the required number of software cost estimates are complete and
 			 * include software assurance cost estimate(s) for the project, including a cost
 			 * estimate associated with handling safety-critical software and safety-critical data.
 			 */
-			:>> id = "SA-015-1";
+			:>> id = "SWE-015-SA-1";
 			:>> sweId = "SWE-015";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-151-1'> SA151_1 :> SATask {
+		requirement def <'SWE-151-SA-1'> SA151_1 :> SATask {
 			doc /* Assess the project's software cost estimate(s) to determine if the stated
 			 * criteria listed in "a" through "f" are satisfied.
 			 */
-			:>> id = "SA-151-1";
+			:>> id = "SWE-151-SA-1";
 			:>> sweId = "SWE-151";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-174-1'> SA174_1 :> SATask {
+		requirement def <'SWE-174-SA-1'> SA174_1 :> SATask {
 			doc /* Confirm that all the software planning parameters, including size and effort
 			 * estimates, milestones, and characteristics, are submitted to a Center repository.
 			 */
-			:>> id = "SA-174-1";
+			:>> id = "SWE-174-SA-1";
 			:>> sweId = "SWE-174";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-174-2'> SA174_2 :> SATask {
+		requirement def <'SWE-174-SA-2'> SA174_2 :> SATask {
 			doc /* Confirm that all software assurance and software safety software estimates and
 			 * planning parameters are submitted to an organizational repository.
 			 */
-			:>> id = "SA-174-2";
+			:>> id = "SWE-174-SA-2";
 			:>> sweId = "SWE-174";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-016-1'> SA016_1 :> SATask {
+		requirement def <'SWE-016-SA-1'> SA016_1 :> SATask {
 			doc /* Assess that the software schedule satisfies the conditions in the requirement.
 			 */
-			:>> id = "SA-016-1";
+			:>> id = "SWE-016-SA-1";
 			:>> sweId = "SWE-016";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-016-2'> SA016_2 :> SATask {
+		requirement def <'SWE-016-SA-2'> SA016_2 :> SATask {
 			doc /* Develop a software assurance schedule, including software assurance products,
 			 * audits, reporting, and reviews.
 			 */
-			:>> id = "SA-016-2";
+			:>> id = "SWE-016-SA-2";
 			:>> sweId = "SWE-016";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-018-1'> SA018_1 :> SATask {
+		requirement def <'SWE-018-SA-1'> SA018_1 :> SATask {
 			doc /* Confirm the generation and distribution of periodic reports on software schedule
 			 * activities, metrics, and status, including reports of software assurance and software
 			 * safety schedule activities, metrics, and status.
 			 */
-			:>> id = "SA-018-1";
+			:>> id = "SWE-018-SA-1";
 			:>> sweId = "SWE-018";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-018-2'> SA018_2 :> SATask {
+		requirement def <'SWE-018-SA-2'> SA018_2 :> SATask {
 			doc /* Confirm closure of any project software schedule issues.
 			 */
-			:>> id = "SA-018-2";
+			:>> id = "SWE-018-SA-2";
 			:>> sweId = "SWE-018";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-046-1'> SA046_1 :> SATask {
+		requirement def <'SWE-046-SA-1'> SA046_1 :> SATask {
 			doc /* Confirm the project's schedules, including the software assurance's/software
 			 * safety's schedules, are updated.
 			 */
-			:>> id = "SA-046-1";
+			:>> id = "SWE-046-SA-1";
 			:>> sweId = "SWE-046";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-017-1'> SA017_1 :> SATask {
+		requirement def <'SWE-017-SA-1'> SA017_1 :> SATask {
 			doc /* Confirm that any project-specific software training has been planned, tracked,
 			 * and completed for project personnel, including software assurance and software safety
 			 * personnel.
 			 */
-			:>> id = "SA-017-1";
+			:>> id = "SWE-017-SA-1";
 			:>> sweId = "SWE-017";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-017-2'> SA017_2 :> SATask {
+		requirement def <'SWE-017-SA-2'> SA017_2 :> SATask {
 			doc /* Confirm that software assurance and software safety personnel have completed the
 			 * appropriate software assurance and/or software safety training to satisfactorily
 			 * conduct assurance and safety activities.
 			 */
-			:>> id = "SA-017-2";
+			:>> id = "SWE-017-SA-2";
 			:>> sweId = "SWE-017";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-020-1'> SA020_1 :> SATask {
+		requirement def <'SWE-020-SA-1'> SA020_1 :> SATask {
 			doc /* Perform a software classification or concur with the engineering software
 			 * classification of software per the descriptions in NPR 7150.2.
 			 */
-			:>> id = "SA-020-1";
+			:>> id = "SWE-020-SA-1";
 			:>> sweId = "SWE-020";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-176-1'> SA176_1 :> SATask {
+		requirement def <'SWE-176-SA-1'> SA176_1 :> SATask {
 			doc /* Confirm that records of the software Requirements Mapping Matrix and each
 			 * software classification are maintained and updated for the life of the project.
 			 */
-			:>> id = "SA-176-1";
+			:>> id = "SWE-176-SA-1";
 			:>> sweId = "SWE-176";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-022-1'> SA022_1 :> SATask {
+		requirement def <'SWE-022-SA-1'> SA022_1 :> SATask {
 			doc /* Perform software assurance, software safety, and IV&V (if required) according to
 			 * the software assurance and software safety standard requirements in NASA-STD-8739.8,
 			 * Software Assurance and Project's Software Safety Standard, and the software assurance
 			 * plan.
 			 */
-			:>> id = "SA-022-1";
+			:>> id = "SWE-022-SA-1";
 			:>> sweId = "SWE-022";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-141-1'> SA141_1 :> SATask {
+		requirement def <'SWE-141-SA-1'> SA141_1 :> SATask {
 			doc /* Confirm that IV&V requirements (section 4.4) are complete on projects required to
 			 * have IV&V.
 			 */
-			:>> id = "SA-141-1";
+			:>> id = "SWE-141-SA-1";
 			:>> sweId = "SWE-141";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-131-1'> SA131_1 :> SATask {
+		requirement def <'SWE-131-SA-1'> SA131_1 :> SATask {
 			doc /* Confirm that the IV&V Project Execution Plan (IPEP) exists.
 			 */
-			:>> id = "SA-131-1";
+			:>> id = "SWE-131-SA-1";
 			:>> sweId = "SWE-131";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-178-1'> SA178_1 :> SATask {
+		requirement def <'SWE-178-SA-1'> SA178_1 :> SATask {
 			doc /* Confirm that IV&V has access to the software development artifacts, products,
 			 * source code, and data required to perform the IV&V analysis efficiently and
 			 * effectively.
 			 */
-			:>> id = "SA-178-1";
+			:>> id = "SWE-178-SA-1";
 			:>> sweId = "SWE-178";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-179-1'> SA179_1 :> SATask {
+		requirement def <'SWE-179-SA-1'> SA179_1 :> SATask {
 			doc /* Confirm that the project manager responds to IV&V submitted issues, findings, and
 			 * risks and that the project manager tracks IV&V issues, findings, and risks to
 			 * closure.
 			 */
-			:>> id = "SA-179-1";
+			:>> id = "SWE-179-SA-1";
 			:>> sweId = "SWE-179";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-205-1'> SA205_1 :> SATask {
+		requirement def <'SWE-205-SA-1'> SA205_1 :> SATask {
 			doc /* Confirm that the hazard reports or safety data packages contain all known
 			 * software contributions or events where software, either by its action, inaction, or
 			 * incorrect action, leads to a hazard.
 			 */
-			:>> id = "SA-205-1";
+			:>> id = "SWE-205-SA-1";
 			:>> sweId = "SWE-205";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-205-2'> SA205_2 :> SATask {
+		requirement def <'SWE-205-SA-2'> SA205_2 :> SATask {
 			doc /* Assess that the hazard reports identify the software components associated with
 			 * the system hazards per the criteria defined in NASA-STD-8739.8, Appendix A.
 			 */
-			:>> id = "SA-205-2";
+			:>> id = "SWE-205-SA-2";
 			:>> sweId = "SWE-205";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-205-3'> SA205_3 :> SATask {
+		requirement def <'SWE-205-SA-3'> SA205_3 :> SATask {
 			doc /* Assess that hazard analyses (including hazard reports) identify the software
 			 * components associated with the system hazards per the criteria defined in
 			 * NASA-STD-8739.8, Appendix A.
 			 */
-			:>> id = "SA-205-3";
+			:>> id = "SWE-205-SA-3";
 			:>> sweId = "SWE-205";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-205-4'> SA205_4 :> SATask {
+		requirement def <'SWE-205-SA-4'> SA205_4 :> SATask {
 			doc /* Confirm that the traceability between software requirements and hazards with
 			 * software contributions exists.
 			 */
-			:>> id = "SA-205-4";
+			:>> id = "SWE-205-SA-4";
 			:>> sweId = "SWE-205";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-205-5'> SA205_5 :> SATask {
+		requirement def <'SWE-205-SA-5'> SA205_5 :> SATask {
 			doc /* Develop and maintain a software safety analysis throughout the software
 			 * development life cycle.
 			 */
-			:>> id = "SA-205-5";
+			:>> id = "SWE-205-SA-5";
 			:>> sweId = "SWE-205";
 			:>> taskNumber = 5;
 		}
 
-		requirement def <'SA-023-1'> SA023_1 :> SATask {
+		requirement def <'SWE-023-SA-1'> SA023_1 :> SATask {
 			doc /* Confirm that the identified safety-critical software components and data have
 			 * implemented the safety- critical software assurance requirements listed in this
 			 * standard.
 			 */
-			:>> id = "SA-023-1";
+			:>> id = "SWE-023-SA-1";
 			:>> sweId = "SWE-023";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-134-1'> SA134_1 :> SATask {
+		requirement def <'SWE-134-SA-1'> SA134_1 :> SATask {
 			doc /* Analyze the software requirements and the software design and work with the
 			 * project to implement NPR 7150.2 requirement items "a" through "l."
 			 */
-			:>> id = "SA-134-1";
+			:>> id = "SWE-134-SA-1";
 			:>> sweId = "SWE-134";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-134-2'> SA134_2 :> SATask {
+		requirement def <'SWE-134-SA-2'> SA134_2 :> SATask {
 			doc /* Assess that the source code satisfies the conditions in the NPR 7150.2
 			 * requirement "a" through "l" for safety-critical and mission-critical software at each
 			 * code inspection, test review, safety review, and project review milestone.
 			 */
-			:>> id = "SA-134-2";
+			:>> id = "SWE-134-SA-2";
 			:>> sweId = "SWE-134";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-134-3'> SA134_3 :> SATask {
+		requirement def <'SWE-134-SA-3'> SA134_3 :> SATask {
 			doc /* Confirm that the values of the safety-critical loaded data, uplinked data, rules,
 			 * and scripts that affect hazardous system behavior have been tested.
 			 */
-			:>> id = "SA-134-3";
+			:>> id = "SWE-134-SA-3";
 			:>> sweId = "SWE-134";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-134-4'> SA134_4 :> SATask {
+		requirement def <'SWE-134-SA-4'> SA134_4 :> SATask {
 			doc /* Analyze the software design to ensure the following: a. Use of partitioning or
 			 * isolation methods in the design and code, b. That the design logically isolates the
 			 * safety-critical design elements and data from those that are non- safety-critical.
 			 */
-			:>> id = "SA-134-4";
+			:>> id = "SWE-134-SA-4";
 			:>> sweId = "SWE-134";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-134-5'> SA134_5 :> SATask {
+		requirement def <'SWE-134-SA-5'> SA134_5 :> SATask {
 			doc /* Participate in software reviews affecting safety- critical software products.
 			 */
-			:>> id = "SA-134-5";
+			:>> id = "SWE-134-SA-5";
 			:>> sweId = "SWE-134";
 			:>> taskNumber = 5;
 		}
 
-		requirement def <'SA-134-6'> SA134_6 :> SATask {
+		requirement def <'SWE-134-SA-6'> SA134_6 :> SATask {
 			doc /* Ensure the SWE-134 implementation supports and is consistent with the system
 			 * hazard analysis.
 			 */
-			:>> id = "SA-134-6";
+			:>> id = "SWE-134-SA-6";
 			:>> sweId = "SWE-134";
 			:>> taskNumber = 6;
 		}
 
-		requirement def <'SA-219-1'> SA219_1 :> SATask {
+		requirement def <'SWE-219-SA-1'> SA219_1 :> SATask {
 			doc /* Confirm that 100% code test coverage is addressed for all identified
 			 * safety-critical software components or that software developers provide a technically
 			 * acceptable rationale or a risk assessment explaining why the test coverage is not
 			 * possible or why the risk does not justify the cost of increasing coverage for the
 			 * safety-critical code component.
 			 */
-			:>> id = "SA-219-1";
+			:>> id = "SWE-219-SA-1";
 			:>> sweId = "SWE-219";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-220-1'> SA220_1 :> SATask {
+		requirement def <'SWE-220-SA-1'> SA220_1 :> SATask {
 			doc /* Perform or analyze Cyclomatic Complexity metrics on all identified
 			 * safety-critical software components.
 			 */
-			:>> id = "SA-220-1";
+			:>> id = "SWE-220-SA-1";
 			:>> sweId = "SWE-220";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-220-2'> SA220_2 :> SATask {
+		requirement def <'SWE-220-SA-2'> SA220_2 :> SATask {
 			doc /* Confirm that all identified safety-critical software components have a cyclomatic
 			 * complexity value of 15 or lower. If not, assure that software developers provide a
 			 * technically acceptable risk assessment, accepted by the proper technical authority,
@@ -2730,1294 +2730,1294 @@ library package NPR7150 {
 			 * of reducing the complexity to below 15 are not justified by the risk inherent in
 			 * modifying the software component.
 			 */
-			:>> id = "SA-220-2";
+			:>> id = "SWE-220-SA-2";
 			:>> sweId = "SWE-220";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-146-1'> SA146_1 :> SATask {
+		requirement def <'SWE-146-SA-1'> SA146_1 :> SATask {
 			doc /* Assess that the approach for the auto-generation software source code is defined,
 			 * and the approach 'a' 'g.' satisfies at least the conditions through
 			 */
-			:>> id = "SA-146-1";
+			:>> id = "SWE-146-SA-1";
 			:>> sweId = "SWE-146";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-206-1'> SA206_1 :> SATask {
+		requirement def <'SWE-206-SA-1'> SA206_1 :> SATask {
 			doc /* Confirm that NASA, engineering, project, software assurance, and IV&V have
 			 * electronic access to the models, simulations, and associated data used as inputs for
 			 * auto-generation of software.
 			 */
-			:>> id = "SA-206-1";
+			:>> id = "SWE-206-SA-1";
 			:>> sweId = "SWE-206";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-032-1'> SA032_1 :> SATask {
+		requirement def <'SWE-032-SA-1'> SA032_1 :> SATask {
 			doc /* Confirm that Class A and B software acquired, developed, and maintained by NASA
 			 * is performed by an organization with a non-expired CMMI-DEV rating, as per the NPR
 			 * 7150.2 requirement.
 			 */
-			:>> id = "SA-032-1";
+			:>> id = "SWE-032-SA-1";
 			:>> sweId = "SWE-032";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-032-2'> SA032_2 :> SATask {
+		requirement def <'SWE-032-SA-2'> SA032_2 :> SATask {
 			doc /* Assess potential process-related issues, findings, or risks identified from the
 			 * CMMI assessment findings.
 			 */
-			:>> id = "SA-032-2";
+			:>> id = "SWE-032-SA-2";
 			:>> sweId = "SWE-032";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-032-3'> SA032_3 :> SATask {
+		requirement def <'SWE-032-SA-3'> SA032_3 :> SATask {
 			doc /* Perform audits on the software development and software assurance processes.
 			 */
-			:>> id = "SA-032-3";
+			:>> id = "SWE-032-SA-3";
 			:>> sweId = "SWE-032";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-147-1'> SA147_1 :> SATask {
+		requirement def <'SWE-147-SA-1'> SA147_1 :> SATask {
 			doc /* Confirm that the project has considered reusability for its software development
 			 * activities.
 			 */
-			:>> id = "SA-147-1";
+			:>> id = "SWE-147-SA-1";
 			:>> sweId = "SWE-147";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-148-1'> SA148_1 :> SATask {
+		requirement def <'SWE-148-SA-1'> SA148_1 :> SATask {
 			doc /* Confirm that any project software contributed as a reuse candidate has the
 			 * identified information in 'a' 'f.' items through
 			 */
-			:>> id = "SA-148-1";
+			:>> id = "SWE-148-SA-1";
 			:>> sweId = "SWE-148";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-156-1'> SA156_1 :> SATask {
+		requirement def <'SWE-156-SA-1'> SA156_1 :> SATask {
 			doc /* Confirm the project has performed a software cybersecurity assessment on the
 			 * software components per the Agency security policies and the project requirements,
 			 * including risks posed by the use of COTS, GOTS, MOTS, OSS, or reused software
 			 * components.
 			 */
-			:>> id = "SA-156-1";
+			:>> id = "SWE-156-SA-1";
 			:>> sweId = "SWE-156";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-154-1'> SA154_1 :> SATask {
+		requirement def <'SWE-154-SA-1'> SA154_1 :> SATask {
 			doc /* Confirm that cybersecurity risks, along with their mitigations, are identified
 			 * and managed.
 			 */
-			:>> id = "SA-154-1";
+			:>> id = "SWE-154-SA-1";
 			:>> sweId = "SWE-154";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-157-1'> SA157_1 :> SATask {
+		requirement def <'SWE-157-SA-1'> SA157_1 :> SATask {
 			doc /* For software products with communications capabilities, confirm that the software
 			 * requirements, software design documentation, and software implementation address
 			 * unauthorized access per the requirements contained in the Space System Protection
 			 * Standard, NASA-STD-1006.
 			 */
-			:>> id = "SA-157-1";
+			:>> id = "SWE-157-SA-1";
 			:>> sweId = "SWE-157";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-159-1'> SA159_1 :> SATask {
+		requirement def <'SWE-159-SA-1'> SA159_1 :> SATask {
 			doc /* Confirm that testing is complete for the cybersecurity mitigation.
 			 */
-			:>> id = "SA-159-1";
+			:>> id = "SWE-159-SA-1";
 			:>> sweId = "SWE-159";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-159-2'> SA159_2 :> SATask {
+		requirement def <'SWE-159-SA-2'> SA159_2 :> SATask {
 			doc /* Assess the quality of the cybersecurity mitigation implementation testing and the
 			 * test results.
 			 */
-			:>> id = "SA-159-2";
+			:>> id = "SWE-159-SA-2";
 			:>> sweId = "SWE-159";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-207-1'> SA207_1 :> SATask {
+		requirement def <'SWE-207-SA-1'> SA207_1 :> SATask {
 			doc /* Assess that the software coding guidelines (e.g., coding standards) includes
 			 * secure coding practices.
 			 */
-			:>> id = "SA-207-1";
+			:>> id = "SWE-207-SA-1";
 			:>> sweId = "SWE-207";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-185-1'> SA185_1 :> SATask {
+		requirement def <'SWE-185-SA-1'> SA185_1 :> SATask {
 			doc /* Analyze the engineering data or perform independent static code analysis to
 			 * verify that the the project's code meets secure coding standard requirements.
 			 */
-			:>> id = "SA-185-1";
+			:>> id = "SWE-185-SA-1";
 			:>> sweId = "SWE-185";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-210-1'> SA210_1 :> SATask {
+		requirement def <'SWE-210-SA-1'> SA210_1 :> SATask {
 			doc /* Confirm that the software requirements exist for collecting, reporting, and
 			 * storing data relating to the detection of adversarial actions.
 			 */
-			:>> id = "SA-210-1";
+			:>> id = "SWE-210-SA-1";
 			:>> sweId = "SWE-210";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-052-1'> SA052_1 :> SATask {
+		requirement def <'SWE-052-SA-1'> SA052_1 :> SATask {
 			doc /* Confirm that bi-directional traceability has been completed, recorded, and
 			 * maintained.
 			 */
-			:>> id = "SA-052-1";
+			:>> id = "SWE-052-SA-1";
 			:>> sweId = "SWE-052";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-052-2'> SA052_2 :> SATask {
+		requirement def <'SWE-052-SA-2'> SA052_2 :> SATask {
 			doc /* Confirm that the software traceability includes traceability to any hazard that
 			 * includes software.
 			 */
-			:>> id = "SA-052-2";
+			:>> id = "SWE-052-SA-2";
 			:>> sweId = "SWE-052";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-050-1'> SA050_1 :> SATask {
+		requirement def <'SWE-050-SA-1'> SA050_1 :> SATask {
 			doc /* Confirm that all software requirements are established, captured, and documented
 			 * as part of the technical specification, including requirements for COTS, GOTS, MOTS,
 			 * OSS, or reused software components.
 			 */
-			:>> id = "SA-050-1";
+			:>> id = "SWE-050-SA-1";
 			:>> sweId = "SWE-050";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-051-1'> SA051_1 :> SATask {
+		requirement def <'SWE-051-SA-1'> SA051_1 :> SATask {
 			doc /* Perform a software assurance analysis on the detailed software requirements to
 			 * analyze the software requirement sources and identify any incorrect, missing, or
 			 * incomplete requirements.
 			 */
-			:>> id = "SA-051-1";
+			:>> id = "SWE-051-SA-1";
 			:>> sweId = "SWE-051";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-184-1'> SA184_1 :> SATask {
+		requirement def <'SWE-184-SA-1'> SA184_1 :> SATask {
 			doc /* Analyze and confirm that the software requirements documentation contains the
 			 * software related safety constraints, controls, mitigations, and assumptions between
 			 * the hardware, operator, and the software.
 			 */
-			:>> id = "SA-184-1";
+			:>> id = "SWE-184-SA-1";
 			:>> sweId = "SWE-184";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-053-1'> SA053_1 :> SATask {
+		requirement def <'SWE-053-SA-1'> SA053_1 :> SATask {
 			doc /* Confirm the software requirements changes are documented, tracked, approved, and
 			 * maintained throughout the project life cycle.
 			 */
-			:>> id = "SA-053-1";
+			:>> id = "SWE-053-SA-1";
 			:>> sweId = "SWE-053";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-054-1'> SA054_1 :> SATask {
+		requirement def <'SWE-054-SA-1'> SA054_1 :> SATask {
 			doc /* Monitor identified differences among requirements, project plans, and software
 			 * products and confirm differences are addressed and corrective actions are tracked
 			 * until closure.
 			 */
-			:>> id = "SA-054-1";
+			:>> id = "SWE-054-SA-1";
 			:>> sweId = "SWE-054";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-055-1'> SA055_1 :> SATask {
+		requirement def <'SWE-055-SA-1'> SA055_1 :> SATask {
 			doc /* Confirm that the project software testing has shown that software will function
 			 * as expected in the customer environment.
 			 */
-			:>> id = "SA-055-1";
+			:>> id = "SWE-055-SA-1";
 			:>> sweId = "SWE-055";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-057-1'> SA057_1 :> SATask {
+		requirement def <'SWE-057-SA-1'> SA057_1 :> SATask {
 			doc /* Assess that the software architecture addresses or contains the software
 			 * structure, qualities, interfaces, and external/internal components.
 			 */
-			:>> id = "SA-057-1";
+			:>> id = "SWE-057-SA-1";
 			:>> sweId = "SWE-057";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-057-2'> SA057_2 :> SATask {
+		requirement def <'SWE-057-SA-2'> SA057_2 :> SATask {
 			doc /* Analyze the software architecture to assess whether software safety and mission
 			 * assurance requirements are met.
 			 */
-			:>> id = "SA-057-2";
+			:>> id = "SWE-057-SA-2";
 			:>> sweId = "SWE-057";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-143-1'> SA143_1 :> SATask {
+		requirement def <'SWE-143-SA-1'> SA143_1 :> SATask {
 			doc /* Assess the results of or participate in software architecture review activities
 			 * held by the project.
 			 */
-			:>> id = "SA-143-1";
+			:>> id = "SWE-143-SA-1";
 			:>> sweId = "SWE-143";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-058-1'> SA058_1 :> SATask {
+		requirement def <'SWE-058-SA-1'> SA058_1 :> SATask {
 			doc /* Assess the software design against the hardware and software requirements and
 			 * identify any gaps.
 			 */
-			:>> id = "SA-058-1";
+			:>> id = "SWE-058-SA-1";
 			:>> sweId = "SWE-058";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-058-2'> SA058_2 :> SATask {
+		requirement def <'SWE-058-SA-2'> SA058_2 :> SATask {
 			doc /* Assess the software design to verify that the design is consistent with the
 			 * software architectural design concepts and that the software design describes the
 			 * lower-level units to be coded, compiled, and tested.
 			 */
-			:>> id = "SA-058-2";
+			:>> id = "SWE-058-SA-2";
 			:>> sweId = "SWE-058";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-058-3'> SA058_3 :> SATask {
+		requirement def <'SWE-058-SA-3'> SA058_3 :> SATask {
 			doc /* Assess that the design does not introduce undesirable behaviors or unnecessary
 			 * capabilities.
 			 */
-			:>> id = "SA-058-3";
+			:>> id = "SWE-058-SA-3";
 			:>> sweId = "SWE-058";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-058-4'> SA058_4 :> SATask {
+		requirement def <'SWE-058-SA-4'> SA058_4 :> SATask {
 			doc /* Confirm that the software design implements all of the required safety-critical
 			 * functions and requirements.
 			 */
-			:>> id = "SA-058-4";
+			:>> id = "SWE-058-SA-4";
 			:>> sweId = "SWE-058";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-058-5'> SA058_5 :> SATask {
+		requirement def <'SWE-058-SA-5'> SA058_5 :> SATask {
 			doc /* Perform a software assurance design analysis.
 			 */
-			:>> id = "SA-058-5";
+			:>> id = "SWE-058-SA-5";
 			:>> sweId = "SWE-058";
 			:>> taskNumber = 5;
 		}
 
-		requirement def <'SA-060-1'> SA060_1 :> SATask {
+		requirement def <'SWE-060-SA-1'> SA060_1 :> SATask {
 			doc /* Confirm that the software code implements the software designs.
 			 */
-			:>> id = "SA-060-1";
+			:>> id = "SWE-060-SA-1";
 			:>> sweId = "SWE-060";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-060-2'> SA060_2 :> SATask {
+		requirement def <'SWE-060-SA-2'> SA060_2 :> SATask {
 			doc /* Confirm that the code does not contain functionality not defined in the design or
 			 * requirements.
 			 */
-			:>> id = "SA-060-2";
+			:>> id = "SWE-060-SA-2";
 			:>> sweId = "SWE-060";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-061-1'> SA061_1 :> SATask {
+		requirement def <'SWE-061-SA-1'> SA061_1 :> SATask {
 			doc /* Assure the project manager selected and/or defined software coding methods,
 			 * standards, and criteria.
 			 */
-			:>> id = "SA-061-1";
+			:>> id = "SWE-061-SA-1";
 			:>> sweId = "SWE-061";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-061-2'> SA061_2 :> SATask {
+		requirement def <'SWE-061-SA-2'> SA061_2 :> SATask {
 			doc /* Analyze that the software code conforms to all required software coding methods,
 			 * rules, and principles.
 			 */
-			:>> id = "SA-061-2";
+			:>> id = "SWE-061-SA-2";
 			:>> sweId = "SWE-061";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-135-1'> SA135_1 :> SATask {
+		requirement def <'SWE-135-SA-1'> SA135_1 :> SATask {
 			doc /* Analyze the engineering data or perform independent static code analysis to check
 			 * for code detects defects, software quality objectives, code coverage objectives,
 			 * software complexity values, and software security objectives.
 			 */
-			:>> id = "SA-135-1";
+			:>> id = "SWE-135-SA-1";
 			:>> sweId = "SWE-135";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-135-2'> SA135_2 :> SATask {
+		requirement def <'SWE-135-SA-2'> SA135_2 :> SATask {
 			doc /* Confirm the static analysis tool(s) are used with checkers to identify security
 			 * and coding errors and defects.
 			 */
-			:>> id = "SA-135-2";
+			:>> id = "SWE-135-SA-2";
 			:>> sweId = "SWE-135";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-135-3'> SA135_3 :> SATask {
+		requirement def <'SWE-135-SA-3'> SA135_3 :> SATask {
 			doc /* Assess that the project addresses the results from the static analysis tools used
 			 * by software assurance, software safety, engineering, or the project.
 			 */
-			:>> id = "SA-135-3";
+			:>> id = "SWE-135-SA-3";
 			:>> sweId = "SWE-135";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-135-4'> SA135_4 :> SATask {
+		requirement def <'SWE-135-SA-4'> SA135_4 :> SATask {
 			doc /* Confirm that the software code has been scanned for security defects and confirm
 			 * the result.
 			 */
-			:>> id = "SA-135-4";
+			:>> id = "SWE-135-SA-4";
 			:>> sweId = "SWE-135";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-135-5'> SA135_5 :> SATask {
+		requirement def <'SWE-135-SA-5'> SA135_5 :> SATask {
 			doc /* Per SWE-219 for safety-critical software, verify code coverage and approved
 			 * waivers.
 			 */
-			:>> id = "SA-135-5";
+			:>> id = "SWE-135-SA-5";
 			:>> sweId = "SWE-135";
 			:>> taskNumber = 5;
 		}
 
-		requirement def <'SA-135-6'> SA135_6 :> SATask {
+		requirement def <'SWE-135-SA-6'> SA135_6 :> SATask {
 			doc /* Per SWE-220 for safety-critical software, verify cyclomatic complexity and
 			 * approved waivers.
 			 */
-			:>> id = "SA-135-6";
+			:>> id = "SWE-135-SA-6";
 			:>> sweId = "SWE-135";
 			:>> taskNumber = 6;
 		}
 
-		requirement def <'SA-135-7'> SA135_7 :> SATask {
+		requirement def <'SWE-135-SA-7'> SA135_7 :> SATask {
 			doc /* Confirm that Software Quality Objectives or software quality threshold levels are
 			 * defined and set for static code analysis defects, checks, or software security
 			 * objectives.
 			 */
-			:>> id = "SA-135-7";
+			:>> id = "SWE-135-SA-7";
 			:>> sweId = "SWE-135";
 			:>> taskNumber = 7;
 		}
 
-		requirement def <'SA-062-1'> SA062_1 :> SATask {
+		requirement def <'SWE-062-SA-1'> SA062_1 :> SATask {
 			doc /* Confirm that the project successfully executes the required unit tests,
 			 * particularly those testing safety- critical functions.
 			 */
-			:>> id = "SA-062-1";
+			:>> id = "SWE-062-SA-1";
 			:>> sweId = "SWE-062";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-062-2'> SA062_2 :> SATask {
+		requirement def <'SWE-062-SA-2'> SA062_2 :> SATask {
 			doc /* Confirm that the project addresses or otherwise tracks to closure errors,
 			 * defects, or problem reports found during unit testing.
 			 */
-			:>> id = "SA-062-2";
+			:>> id = "SWE-062-SA-2";
 			:>> sweId = "SWE-062";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-186-1'> SA186_1 :> SATask {
+		requirement def <'SWE-186-SA-1'> SA186_1 :> SATask {
 			doc /* Confirm that the project maintains the procedures, scripts, results, and data
 			 * needed to repeat the unit testing (e.g., as-run scripts, test procedures, results).
 			 */
-			:>> id = "SA-186-1";
+			:>> id = "SWE-186-SA-1";
 			:>> sweId = "SWE-186";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-063-1'> SA063_1 :> SATask {
+		requirement def <'SWE-063-SA-1'> SA063_1 :> SATask {
 			doc /* Confirm that the project creates a correct software version description for each
 			 * software release.
 			 */
-			:>> id = "SA-063-1";
+			:>> id = "SWE-063-SA-1";
 			:>> sweId = "SWE-063";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-063-2'> SA063_2 :> SATask {
+		requirement def <'SWE-063-SA-2'> SA063_2 :> SATask {
 			doc /* For each software release, confirm that the software has been scanned for
 			 * security defects and coding standard compliance and confirm the results.
 			 */
-			:>> id = "SA-063-2";
+			:>> id = "SWE-063-SA-2";
 			:>> sweId = "SWE-063";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-136-1'> SA136_1 :> SATask {
+		requirement def <'SWE-136-SA-1'> SA136_1 :> SATask {
 			doc /* Confirm that the software tool(s) needed to create and maintain software is
 			 * validated and accredited.
 			 */
-			:>> id = "SA-136-1";
+			:>> id = "SWE-136-SA-1";
 			:>> sweId = "SWE-136";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-065a-1'> SA065a_1 :> SATask {
+		requirement def <'SWE-065a-SA-1'> SA065a_1 :> SATask {
 			doc /* Confirm that software test plans have been established, contain correct content,
 			 * and are maintained.
 			 */
-			:>> id = "SA-065a-1";
+			:>> id = "SWE-065a-SA-1";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "a";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-065a-2'> SA065a_2 :> SATask {
+		requirement def <'SWE-065a-SA-2'> SA065a_2 :> SATask {
 			doc /* Confirm that the software test plan addresses the verification of safety-critical
 			 * software, specifically the off-nominal scenarios.
 			 */
-			:>> id = "SA-065a-2";
+			:>> id = "SWE-065a-SA-2";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "a";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-065b-1'> SA065b_1 :> SATask {
+		requirement def <'SWE-065b-SA-1'> SA065b_1 :> SATask {
 			doc /* Confirm that the test procedures have been established and are updated when
 			 * changes to tests or requirements occur.
 			 */
-			:>> id = "SA-065b-1";
+			:>> id = "SWE-065b-SA-1";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "b";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-065b-2'> SA065b_2 :> SATask {
+		requirement def <'SWE-065b-SA-2'> SA065b_2 :> SATask {
 			doc /* Analyze the software test procedures for the following: a. Coverage of the
 			 * software requirements. b. Acceptance or pass/fail criteria, c. The inclusion of
 			 * operational and off-nominal conditions, including boundary conditions, d.
 			 * Requirements coverage and hazards per SWE-066 and SWE-192, respectively. e.
 			 * Requirements coverage for cybersecurity per SWE-157 and SWE-210.
 			 */
-			:>> id = "SA-065b-2";
+			:>> id = "SWE-065b-SA-2";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "b";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-065c-1'> SA065c_1 :> SATask {
+		requirement def <'SWE-065c-SA-1'> SA065c_1 :> SATask {
 			doc /* Confirm that the project creates and maintains any code specifically written to
 			 * perform test procedures in a software configuration management system.
 			 */
-			:>> id = "SA-065c-1";
+			:>> id = "SWE-065c-SA-1";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "c";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-065c-2'> SA065c_2 :> SATask {
+		requirement def <'SWE-065c-SA-2'> SA065c_2 :> SATask {
 			doc /* Confirm that the project records all issues and discrepancies in the code
 			 * specifically written to perform test procedures.
 			 */
-			:>> id = "SA-065c-2";
+			:>> id = "SWE-065c-SA-2";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "c";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-065c-3'> SA065c_3 :> SATask {
+		requirement def <'SWE-065c-SA-3'> SA065c_3 :> SATask {
 			doc /* Confirm that the project tracks to closure errors and defects found in the code
 			 * specifically written to perform test procedures.
 			 */
-			:>> id = "SA-065c-3";
+			:>> id = "SWE-065c-SA-3";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "c";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-065d-1'> SA065d_1 :> SATask {
+		requirement def <'SWE-065d-SA-1'> SA065d_1 :> SATask {
 			doc /* Confirm that the project creates and maintains the test reports throughout
 			 * software integration and test.
 			 */
-			:>> id = "SA-065d-1";
+			:>> id = "SWE-065d-SA-1";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "d";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-065d-2'> SA065d_2 :> SATask {
+		requirement def <'SWE-065d-SA-2'> SA065d_2 :> SATask {
 			doc /* Confirm that the project records the test report data and that the data contains
 			 * the as-run test data, the test results, and required approvals.
 			 */
-			:>> id = "SA-065d-2";
+			:>> id = "SWE-065d-SA-2";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "d";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-065d-3'> SA065d_3 :> SATask {
+		requirement def <'SWE-065d-SA-3'> SA065d_3 :> SATask {
 			doc /* Confirm that the project records all issues and discrepancies found during each
 			 * test.
 			 */
-			:>> id = "SA-065d-3";
+			:>> id = "SWE-065d-SA-3";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "d";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-065d-4'> SA065d_4 :> SATask {
+		requirement def <'SWE-065d-SA-4'> SA065d_4 :> SATask {
 			doc /* Confirm that the project tracks to closure errors and defects found during
 			 * testing.
 			 */
-			:>> id = "SA-065d-4";
+			:>> id = "SWE-065d-SA-4";
 			:>> sweId = "SWE-065";
 			:>> sweItem = "d";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-066-1'> SA066_1 :> SATask {
+		requirement def <'SWE-066-SA-1'> SA066_1 :> SATask {
 			doc /* Confirm test coverage of the requirements through the execution of the test
 			 * procedures.
 			 */
-			:>> id = "SA-066-1";
+			:>> id = "SWE-066-SA-1";
 			:>> sweId = "SWE-066";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-066-2'> SA066_2 :> SATask {
+		requirement def <'SWE-066-SA-2'> SA066_2 :> SATask {
 			doc /* Perform test witnessing for safety-critical software.
 			 */
-			:>> id = "SA-066-2";
+			:>> id = "SWE-066-SA-2";
 			:>> sweId = "SWE-066";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-066-3'> SA066_3 :> SATask {
+		requirement def <'SWE-066-SA-3'> SA066_3 :> SATask {
 			doc /* Confirm that any newly identified software contributions to hazards, events, or
 			 * conditions found during testing are in the system safety data package.
 			 */
-			:>> id = "SA-066-3";
+			:>> id = "SWE-066-SA-3";
 			:>> sweId = "SWE-066";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-187-1'> SA187_1 :> SATask {
+		requirement def <'SWE-187-SA-1'> SA187_1 :> SATask {
 			doc /* Confirm that software items to be tested are under configuration management
 			 * before the start of testing.
 			 */
-			:>> id = "SA-187-1";
+			:>> id = "SWE-187-SA-1";
 			:>> sweId = "SWE-187";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-187-2'> SA187_2 :> SATask {
+		requirement def <'SWE-187-SA-2'> SA187_2 :> SATask {
 			doc /* Confirm the project maintains the software items under configuration management
 			 * through the completion of testing.
 			 */
-			:>> id = "SA-187-2";
+			:>> id = "SWE-187-SA-2";
 			:>> sweId = "SWE-187";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-068-1'> SA068_1 :> SATask {
+		requirement def <'SWE-068-SA-1'> SA068_1 :> SATask {
 			doc /* Confirm that test results are assessed and recorded.
 			 */
-			:>> id = "SA-068-1";
+			:>> id = "SWE-068-SA-1";
 			:>> sweId = "SWE-068";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-068-2'> SA068_2 :> SATask {
+		requirement def <'SWE-068-SA-2'> SA068_2 :> SATask {
 			doc /* Confirm that the project documents software non- conformances in a tracking
 			 * system.
 			 */
-			:>> id = "SA-068-2";
+			:>> id = "SWE-068-SA-2";
 			:>> sweId = "SWE-068";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-068-3'> SA068_3 :> SATask {
+		requirement def <'SWE-068-SA-3'> SA068_3 :> SATask {
 			doc /* Confirm that test results are sufficient verification artifacts for the hazard
 			 * reports.
 			 */
-			:>> id = "SA-068-3";
+			:>> id = "SWE-068-SA-3";
 			:>> sweId = "SWE-068";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-070-1'> SA070_1 :> SATask {
+		requirement def <'SWE-070-SA-1'> SA070_1 :> SATask {
 			doc /* Confirm that the software models, simulations, and analysis tools used to achieve
 			 * the qualification of flight software or flight equipment have been validated and
 			 * accredited.
 			 */
-			:>> id = "SA-070-1";
+			:>> id = "SWE-070-SA-1";
 			:>> sweId = "SWE-070";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-071-1'> SA071_1 :> SATask {
+		requirement def <'SWE-071-SA-1'> SA071_1 :> SATask {
 			doc /* Analyze that software test plans and software test procedures cover the software
 			 * requirements and provide adequate verification of hazard controls, specifically the
 			 * off-nominal scenarios.
 			 */
-			:>> id = "SA-071-1";
+			:>> id = "SWE-071-SA-1";
 			:>> sweId = "SWE-071";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-073-1'> SA073_1 :> SATask {
+		requirement def <'SWE-073-SA-1'> SA073_1 :> SATask {
 			doc /* Confirm that the project validates the software components on the targeted
 			 * platform or a high- fidelity simulation.
 			 */
-			:>> id = "SA-073-1";
+			:>> id = "SWE-073-SA-1";
 			:>> sweId = "SWE-073";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-189-1'> SA189_1 :> SATask {
+		requirement def <'SWE-189-SA-1'> SA189_1 :> SATask {
 			doc /* Confirm that code coverage measurements have been selected, performed, tracked,
 			 * recorded, and communicated with each release.
 			 */
-			:>> id = "SA-189-1";
+			:>> id = "SWE-189-SA-1";
 			:>> sweId = "SWE-189";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-190-1'> SA190_1 :> SATask {
+		requirement def <'SWE-190-SA-1'> SA190_1 :> SATask {
 			doc /* Confirm that the project performs code coverage analysis using the results of the
 			 * tests or a code coverage tool.
 			 */
-			:>> id = "SA-190-1";
+			:>> id = "SWE-190-SA-1";
 			:>> sweId = "SWE-190";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-190-2'> SA190_2 :> SATask {
+		requirement def <'SWE-190-SA-2'> SA190_2 :> SATask {
 			doc /* Analyze the code coverage measurements to identify uncovered software code.
 			 */
-			:>> id = "SA-190-2";
+			:>> id = "SWE-190-SA-2";
 			:>> sweId = "SWE-190";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-190-3'> SA190_3 :> SATask {
+		requirement def <'SWE-190-SA-3'> SA190_3 :> SATask {
 			doc /* Assess any uncovered software code for potential risk, issues, or findings.
 			 */
-			:>> id = "SA-190-3";
+			:>> id = "SWE-190-SA-3";
 			:>> sweId = "SWE-190";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-191-1'> SA191_1 :> SATask {
+		requirement def <'SWE-191-SA-1'> SA191_1 :> SATask {
 			doc /* Confirm that the project plans regression testing and that the regression testing
 			 * is adequate and includes retesting of all safety-critical code components.
 			 */
-			:>> id = "SA-191-1";
+			:>> id = "SWE-191-SA-1";
 			:>> sweId = "SWE-191";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-191-2'> SA191_2 :> SATask {
+		requirement def <'SWE-191-SA-2'> SA191_2 :> SATask {
 			doc /* Confirm that the project performs the planned regression testing.
 			 */
-			:>> id = "SA-191-2";
+			:>> id = "SWE-191-SA-2";
 			:>> sweId = "SWE-191";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-191-3'> SA191_3 :> SATask {
+		requirement def <'SWE-191-SA-3'> SA191_3 :> SATask {
 			doc /* Identify any risks and issues associated with the regression test set selection
 			 * and execution.
 			 */
-			:>> id = "SA-191-3";
+			:>> id = "SWE-191-SA-3";
 			:>> sweId = "SWE-191";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-191-4'> SA191_4 :> SATask {
+		requirement def <'SWE-191-SA-4'> SA191_4 :> SATask {
 			doc /* Confirm that the regression test procedures are updated to incorporate tests that
 			 * validate the correction of critical anomalies.
 			 */
-			:>> id = "SA-191-4";
+			:>> id = "SWE-191-SA-4";
 			:>> sweId = "SWE-191";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-192-1'> SA192_1 :> SATask {
+		requirement def <'SWE-192-SA-1'> SA192_1 :> SATask {
 			doc /* Through testing, confirm that the project verifies the software requirements
 			 * which trace to a hazardous event, cause, or mitigation techniques.
 			 */
-			:>> id = "SA-192-1";
+			:>> id = "SWE-192-SA-1";
 			:>> sweId = "SWE-192";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-193-1'> SA193_1 :> SATask {
+		requirement def <'SWE-193-SA-1'> SA193_1 :> SATask {
 			doc /* Confirm that the project develops acceptance tests for loaded or uplinked data,
 			 * rules, and code that affect software and software system behavior.
 			 */
-			:>> id = "SA-193-1";
+			:>> id = "SWE-193-SA-1";
 			:>> sweId = "SWE-193";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-193-2'> SA193_2 :> SATask {
+		requirement def <'SWE-193-SA-2'> SA193_2 :> SATask {
 			doc /* Confirm that the loaded or uplinked data, rules, scripts, or code that affect
 			 * software and software system behavior are baselined in the software configuration
 			 * system.
 			 */
-			:>> id = "SA-193-2";
+			:>> id = "SWE-193-SA-2";
 			:>> sweId = "SWE-193";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-193-3'> SA193_3 :> SATask {
+		requirement def <'SWE-193-SA-3'> SA193_3 :> SATask {
 			doc /* Confirm that loaded or uplinked data, rules, and scripts are verified as correct
 			 * prior to operations, particularly for safety-critical operations.
 			 */
-			:>> id = "SA-193-3";
+			:>> id = "SWE-193-SA-3";
 			:>> sweId = "SWE-193";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-211-1'> SA211_1 :> SATask {
+		requirement def <'SWE-211-SA-1'> SA211_1 :> SATask {
 			doc /* Confirm that the project is testing COTS, GOTS, MOTS, OSS, or reused software
 			 * components to the same level as developed software for its intended use.
 			 */
-			:>> id = "SA-211-1";
+			:>> id = "SWE-211-SA-1";
 			:>> sweId = "SWE-211";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-075-1'> SA075_1 :> SATask {
+		requirement def <'SWE-075-SA-1'> SA075_1 :> SATask {
 			doc /* Assess the maintenance, operations, and retirement plans for completeness of the
 			 * required software engineering and software assurance activities.
 			 */
-			:>> id = "SA-075-1";
+			:>> id = "SWE-075-SA-1";
 			:>> sweId = "SWE-075";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-075-2'> SA075_2 :> SATask {
+		requirement def <'SWE-075-SA-2'> SA075_2 :> SATask {
 			doc /* Confirm that the project implements software operations, software maintenance,
 			 * and software retirement plans.
 			 */
-			:>> id = "SA-075-2";
+			:>> id = "SWE-075-SA-2";
 			:>> sweId = "SWE-075";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-077-1'> SA077_1 :> SATask {
+		requirement def <'SWE-077-SA-1'> SA077_1 :> SATask {
 			doc /* Confirm that the correct version of the products is delivered, including as-built
 			 * documentation and project records.
 			 */
-			:>> id = "SA-077-1";
+			:>> id = "SWE-077-SA-1";
 			:>> sweId = "SWE-077";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-077-2'> SA077_2 :> SATask {
+		requirement def <'SWE-077-SA-2'> SA077_2 :> SATask {
 			doc /* Perform audits for all deliveries per the configuration management processes to
 			 * verify that all products are being delivered and are the correct versions.
 			 */
-			:>> id = "SA-077-2";
+			:>> id = "SWE-077-SA-2";
 			:>> sweId = "SWE-077";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-194-1'> SA194_1 :> SATask {
+		requirement def <'SWE-194-SA-1'> SA194_1 :> SATask {
 			doc /* Confirm that the project has identified the software requirements to be met, the
 			 * approved changes to be implemented, and defects to be resolved for each delivery.
 			 */
-			:>> id = "SA-194-1";
+			:>> id = "SWE-194-SA-1";
 			:>> sweId = "SWE-194";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-194-2'> SA194_2 :> SATask {
+		requirement def <'SWE-194-SA-2'> SA194_2 :> SATask {
 			doc /* Confirm that the project has met all software requirements identified for
 			 * delivery.
 			 */
-			:>> id = "SA-194-2";
+			:>> id = "SWE-194-SA-2";
 			:>> sweId = "SWE-194";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-194-3'> SA194_3 :> SATask {
+		requirement def <'SWE-194-SA-3'> SA194_3 :> SATask {
 			doc /* Confirm requirements once planned for delivery but no longer appearing in
 			 * delivery documentation have been dispositioned.
 			 */
-			:>> id = "SA-194-3";
+			:>> id = "SWE-194-SA-3";
 			:>> sweId = "SWE-194";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-194-4'> SA194_4 :> SATask {
+		requirement def <'SWE-194-SA-4'> SA194_4 :> SATask {
 			doc /* Confirm that approved changes have been implemented and tested.
 			 */
-			:>> id = "SA-194-4";
+			:>> id = "SWE-194-SA-4";
 			:>> sweId = "SWE-194";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-194-5'> SA194_5 :> SATask {
+		requirement def <'SWE-194-SA-5'> SA194_5 :> SATask {
 			doc /* Confirm that the approved changes to be implemented and the defects to be
 			 * resolved have been resolved.
 			 */
-			:>> id = "SA-194-5";
+			:>> id = "SWE-194-SA-5";
 			:>> sweId = "SWE-194";
 			:>> taskNumber = 5;
 		}
 
-		requirement def <'SA-194-6'> SA194_6 :> SATask {
+		requirement def <'SWE-194-SA-6'> SA194_6 :> SATask {
 			doc /* Approve or sign off on the projects delivered products.
 			 */
-			:>> id = "SA-194-6";
+			:>> id = "SWE-194-SA-6";
 			:>> sweId = "SWE-194";
 			:>> taskNumber = 6;
 		}
 
-		requirement def <'SA-195-1'> SA195_1 :> SATask {
+		requirement def <'SWE-195-SA-1'> SA195_1 :> SATask {
 			doc /* Perform audits on the standards and processes used throughout maintenance based
 			 * on the software classification.
 			 */
-			:>> id = "SA-195-1";
+			:>> id = "SWE-195-SA-1";
 			:>> sweId = "SWE-195";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-196-1'> SA196_1 :> SATask {
+		requirement def <'SWE-196-SA-1'> SA196_1 :> SATask {
 			doc /* Confirm that the project has identified the records and software tools for
 			 * archival.
 			 */
-			:>> id = "SA-196-1";
+			:>> id = "SWE-196-SA-1";
 			:>> sweId = "SWE-196";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-196-2'> SA196_2 :> SATask {
+		requirement def <'SWE-196-SA-2'> SA196_2 :> SATask {
 			doc /* Confirm that the project archives all software and records selected for archival,
 			 * as planned.
 			 */
-			:>> id = "SA-196-2";
+			:>> id = "SWE-196-SA-2";
 			:>> sweId = "SWE-196";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-079-1'> SA079_1 :> SATask {
+		requirement def <'SWE-079-SA-1'> SA079_1 :> SATask {
 			doc /* Assess that a software configuration management plan has been developed and
 			 * complies with the requirements in NPR 7150.2 and Center/project guidance.
 			 */
-			:>> id = "SA-079-1";
+			:>> id = "SWE-079-SA-1";
 			:>> sweId = "SWE-079";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-080-1'> SA080_1 :> SATask {
+		requirement def <'SWE-080-SA-1'> SA080_1 :> SATask {
 			doc /* Analyze proposed software and hardware changes to software products for impacts,
 			 * particularly safety and security.
 			 */
-			:>> id = "SA-080-1";
+			:>> id = "SWE-080-SA-1";
 			:>> sweId = "SWE-080";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-080-2'> SA080_2 :> SATask {
+		requirement def <'SWE-080-SA-2'> SA080_2 :> SATask {
 			doc /* Confirm the following: a. The project tracks the changes. b. The changes are
 			 * approved and documented before implementation. c. The implementation of changes is
 			 * complete. d. The project tests the changes.
 			 */
-			:>> id = "SA-080-2";
+			:>> id = "SWE-080-SA-2";
 			:>> sweId = "SWE-080";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-080-3'> SA080_3 :> SATask {
+		requirement def <'SWE-080-SA-3'> SA080_3 :> SATask {
 			doc /* Confirm software changes follow the software change control process.
 			 */
-			:>> id = "SA-080-3";
+			:>> id = "SWE-080-SA-3";
 			:>> sweId = "SWE-080";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-081-1'> SA081_1 :> SATask {
+		requirement def <'SWE-081-SA-1'> SA081_1 :> SATask {
 			doc /* Confirm that the project has identified the configuration items and their
 			 * versions to be controlled.
 			 */
-			:>> id = "SA-081-1";
+			:>> id = "SWE-081-SA-1";
 			:>> sweId = "SWE-081";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-081-2'> SA081_2 :> SATask {
+		requirement def <'SWE-081-SA-2'> SA081_2 :> SATask {
 			doc /* Assess that the software safety-critical items are configuration-managed,
 			 * including hazard reports and safety analysis.
 			 */
-			:>> id = "SA-081-2";
+			:>> id = "SWE-081-SA-2";
 			:>> sweId = "SWE-081";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-082-1'> SA082_1 :> SATask {
+		requirement def <'SWE-082-SA-1'> SA082_1 :> SATask {
 			doc /* Confirm that software assurance has participation in software control activities.
 			 */
-			:>> id = "SA-082-1";
+			:>> id = "SWE-082-SA-1";
 			:>> sweId = "SWE-082";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-082-2'> SA082_2 :> SATask {
+		requirement def <'SWE-082-SA-2'> SA082_2 :> SATask {
 			doc /* Perform an audit against the configuration management procedures to confirm that
 			 * the project follows the established procedures.
 			 */
-			:>> id = "SA-082-2";
+			:>> id = "SWE-082-SA-2";
 			:>> sweId = "SWE-082";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-083-1'> SA083_1 :> SATask {
+		requirement def <'SWE-083-SA-1'> SA083_1 :> SATask {
 			doc /* Confirm that the project maintains records of the configuration status of the
 			 * configuration items.
 			 */
-			:>> id = "SA-083-1";
+			:>> id = "SWE-083-SA-1";
 			:>> sweId = "SWE-083";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-084-1'> SA084_1 :> SATask {
+		requirement def <'SWE-084-SA-1'> SA084_1 :> SATask {
 			doc /* Confirm that the project manager performed software configuration audits to
 			 * determine the correct version of the software configuration items and verify that the
 			 * results of the audit conform to the records that define them.
 			 */
-			:>> id = "SA-084-1";
+			:>> id = "SWE-084-SA-1";
 			:>> sweId = "SWE-084";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-085-1'> SA085_1 :> SATask {
+		requirement def <'SWE-085-SA-1'> SA085_1 :> SATask {
 			doc /* Confirm that the project establishes procedures for storage, processing,
 			 * distribution, release, and support of deliverable software products.
 			 */
-			:>> id = "SA-085-1";
+			:>> id = "SWE-085-SA-1";
 			:>> sweId = "SWE-085";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-085-2'> SA085_2 :> SATask {
+		requirement def <'SWE-085-SA-2'> SA085_2 :> SATask {
 			doc /* Perform audits on the project to ensure that the project follows defined
 			 * procedures for deliverable software products.
 			 */
-			:>> id = "SA-085-2";
+			:>> id = "SWE-085-SA-2";
 			:>> sweId = "SWE-085";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-045-1'> SA045_1 :> SATask {
+		requirement def <'SWE-045-SA-1'> SA045_1 :> SATask {
 			doc /* Participate in or assess the results from any joint NASA/developer audits. Track
 			 * any findings to closure.
 			 */
-			:>> id = "SA-045-1";
+			:>> id = "SWE-045-SA-1";
 			:>> sweId = "SWE-045";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-086-1'> SA086_1 :> SATask {
+		requirement def <'SWE-086-SA-1'> SA086_1 :> SATask {
 			doc /* Confirm and assess that a risk management process includes recording, analyzing,
 			 * planning, tracking, controlling, and communicating all software risks and mitigation
 			 * plans.
 			 */
-			:>> id = "SA-086-1";
+			:>> id = "SWE-086-SA-1";
 			:>> sweId = "SWE-086";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-086-2'> SA086_2 :> SATask {
+		requirement def <'SWE-086-SA-2'> SA086_2 :> SATask {
 			doc /* Perform audits on the risk management process for the software activities.
 			 */
-			:>> id = "SA-086-2";
+			:>> id = "SWE-086-SA-2";
 			:>> sweId = "SWE-086";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-087-1'> SA087_1 :> SATask {
+		requirement def <'SWE-087-SA-1'> SA087_1 :> SATask {
 			doc /* Confirm that software peer reviews are performed and reported on for project
 			 * activities.
 			 */
-			:>> id = "SA-087-1";
+			:>> id = "SWE-087-SA-1";
 			:>> sweId = "SWE-087";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-087-2'> SA087_2 :> SATask {
+		requirement def <'SWE-087-SA-2'> SA087_2 :> SATask {
 			doc /* Confirm that the project addresses the accepted software peer review findings.
 			 */
-			:>> id = "SA-087-2";
+			:>> id = "SWE-087-SA-2";
 			:>> sweId = "SWE-087";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-087-3'> SA087_3 :> SATask {
+		requirement def <'SWE-087-SA-3'> SA087_3 :> SATask {
 			doc /* Perform peer reviews on software assurance and software safety plans.
 			 */
-			:>> id = "SA-087-3";
+			:>> id = "SWE-087-SA-3";
 			:>> sweId = "SWE-087";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-087-4'> SA087_4 :> SATask {
+		requirement def <'SWE-087-SA-4'> SA087_4 :> SATask {
 			doc /* Confirm that the source code satisfies the conditions in the NPR 7150.2
 			 * requirement SWE-134, "a" through "l," based upon the software functionality for the
 			 * applicable safety-critical requirements at each code inspection/review.
 			 */
-			:>> id = "SA-087-4";
+			:>> id = "SWE-087-SA-4";
 			:>> sweId = "SWE-087";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-088-1'> SA088_1 :> SATask {
+		requirement def <'SWE-088-SA-1'> SA088_1 :> SATask {
 			doc /* Confirm that the project meets the NPR 7150.2 criteria in "a" through "d" for
 			 * each software peer review.
 			 */
-			:>> id = "SA-088-1";
+			:>> id = "SWE-088-SA-1";
 			:>> sweId = "SWE-088";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-088-2'> SA088_2 :> SATask {
+		requirement def <'SWE-088-SA-2'> SA088_2 :> SATask {
 			doc /* Confirm that the project resolves the actions identified from the software peer
 			 * reviews.
 			 */
-			:>> id = "SA-088-2";
+			:>> id = "SWE-088-SA-2";
 			:>> sweId = "SWE-088";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-088-3'> SA088_3 :> SATask {
+		requirement def <'SWE-088-SA-3'> SA088_3 :> SATask {
 			doc /* Perform audits on the peer-review process.
 			 */
-			:>> id = "SA-088-3";
+			:>> id = "SWE-088-SA-3";
 			:>> sweId = "SWE-088";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-089-1'> SA089_1 :> SATask {
+		requirement def <'SWE-089-SA-1'> SA089_1 :> SATask {
 			doc /* Confirm that the project records the software peer reviews and results of
 			 * software inspection measurements.
 			 */
-			:>> id = "SA-089-1";
+			:>> id = "SWE-089-SA-1";
 			:>> sweId = "SWE-089";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-090-1'> SA090_1 :> SATask {
+		requirement def <'SWE-090-SA-1'> SA090_1 :> SATask {
 			doc /* Confirm that a measurement program establishes, records, maintains, reports, and
 			 * uses software assurance, management, and technical measures.
 			 */
-			:>> id = "SA-090-1";
+			:>> id = "SWE-090-SA-1";
 			:>> sweId = "SWE-090";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-090-2'> SA090_2 :> SATask {
+		requirement def <'SWE-090-SA-2'> SA090_2 :> SATask {
 			doc /* Perform trending analyses on metrics (quality metrics, defect metrics) and
 			 * report.
 			 */
-			:>> id = "SA-090-2";
+			:>> id = "SWE-090-SA-2";
 			:>> sweId = "SWE-090";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-090-3'> SA090_3 :> SATask {
+		requirement def <'SWE-090-SA-3'> SA090_3 :> SATask {
 			doc /* Collect any identified organizational metrics and submit them to the
 			 * organizational repository.
 			 */
-			:>> id = "SA-090-3";
+			:>> id = "SWE-090-SA-3";
 			:>> sweId = "SWE-090";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-093-1'> SA093_1 :> SATask {
+		requirement def <'SWE-093-SA-1'> SA093_1 :> SATask {
 			doc /* Confirm software measurement data analysis conforms to documented analysis
 			 * procedures.
 			 */
-			:>> id = "SA-093-1";
+			:>> id = "SWE-093-SA-1";
 			:>> sweId = "SWE-093";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-093-2'> SA093_2 :> SATask {
+		requirement def <'SWE-093-SA-2'> SA093_2 :> SATask {
 			doc /* Analyze software assurance measurement data.
 			 */
-			:>> id = "SA-093-2";
+			:>> id = "SWE-093-SA-2";
 			:>> sweId = "SWE-093";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-094-1'> SA094_1 :> SATask {
+		requirement def <'SWE-094-SA-1'> SA094_1 :> SATask {
 			doc /* Confirm access to software measurement data, analysis, and status as requested to
 			 * the following entities, at a minimum: - Sponsoring Mission Directorate - NASA Chief
 			 * Engineer - Center Technical Authorities - Headquarters SMA
 			 */
-			:>> id = "SA-094-1";
+			:>> id = "SWE-094-SA-1";
 			:>> sweId = "SWE-094";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-199-1'> SA199_1 :> SATask {
+		requirement def <'SWE-199-SA-1'> SA199_1 :> SATask {
 			doc /* Confirm that the project monitors and updates planned measurements to ensure the
 			 * software meets or exceeds performance and functionality requirements, including
 			 * satisfying constraints.
 			 */
-			:>> id = "SA-199-1";
+			:>> id = "SWE-199-SA-1";
 			:>> sweId = "SWE-199";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-199-2'> SA199_2 :> SATask {
+		requirement def <'SWE-199-SA-2'> SA199_2 :> SATask {
 			doc /* Monitor and track any performance or functionality requirements that are not
 			 * being met or are at risk of not being met.
 			 */
-			:>> id = "SA-199-2";
+			:>> id = "SWE-199-SA-2";
 			:>> sweId = "SWE-199";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-200-1'> SA200_1 :> SATask {
+		requirement def <'SWE-200-SA-1'> SA200_1 :> SATask {
 			doc /* Confirm that the project collects, tracks, and reports on the software volatility
 			 * metrics.
 			 */
-			:>> id = "SA-200-1";
+			:>> id = "SWE-200-SA-1";
 			:>> sweId = "SWE-200";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-200-2'> SA200_2 :> SATask {
+		requirement def <'SWE-200-SA-2'> SA200_2 :> SATask {
 			doc /* Analyze software volatility metrics to evaluate requirements stability as an
 			 * early indicator of project problems.
 			 */
-			:>> id = "SA-200-2";
+			:>> id = "SWE-200-SA-2";
 			:>> sweId = "SWE-200";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-201-1'> SA201_1 :> SATask {
+		requirement def <'SWE-201-SA-1'> SA201_1 :> SATask {
 			doc /* Confirm that all software non-conformances are recorded and tracked to
 			 * resolution.
 			 */
-			:>> id = "SA-201-1";
+			:>> id = "SWE-201-SA-1";
 			:>> sweId = "SWE-201";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-201-2'> SA201_2 :> SATask {
+		requirement def <'SWE-201-SA-2'> SA201_2 :> SATask {
 			doc /* Confirm that accepted non-conformances include the rationale for the
 			 * non-conformance.
 			 */
-			:>> id = "SA-201-2";
+			:>> id = "SWE-201-SA-2";
 			:>> sweId = "SWE-201";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-202-1'> SA202_1 :> SATask {
+		requirement def <'SWE-202-SA-1'> SA202_1 :> SATask {
 			doc /* Confirm that all software non-conformances severity levels are defined.
 			 */
-			:>> id = "SA-202-1";
+			:>> id = "SWE-202-SA-1";
 			:>> sweId = "SWE-202";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-202-2'> SA202_2 :> SATask {
+		requirement def <'SWE-202-SA-2'> SA202_2 :> SATask {
 			doc /* Assess the application and accuracy of the defined severity levels to software
 			 * non-conformances.
 			 */
-			:>> id = "SA-202-2";
+			:>> id = "SWE-202-SA-2";
 			:>> sweId = "SWE-202";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-202-3'> SA202_3 :> SATask {
+		requirement def <'SWE-202-SA-3'> SA202_3 :> SATask {
 			doc /* Confirm that the project assigns severity levels to non-conformances associated
 			 * with tools, COTS, GOTS, MOTS, OSS, and reused software components.
 			 */
-			:>> id = "SA-202-3";
+			:>> id = "SWE-202-SA-3";
 			:>> sweId = "SWE-202";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-202-4'> SA202_4 :> SATask {
+		requirement def <'SWE-202-SA-4'> SA202_4 :> SATask {
 			doc /* Maintain or access the number of software non- conformances at each severity
 			 * level for each software configuration item.
 			 */
-			:>> id = "SA-202-4";
+			:>> id = "SWE-202-SA-4";
 			:>> sweId = "SWE-202";
 			:>> taskNumber = 4;
 		}
 
-		requirement def <'SA-203-1'> SA203_1 :> SATask {
+		requirement def <'SWE-203-SA-1'> SA203_1 :> SATask {
 			doc /* Confirm the evaluations of reported non- conformances for all COTS, GOTS, MOTS,
 			 * OSS, or reused software components are occurring throughout the project life cycle.
 			 */
-			:>> id = "SA-203-1";
+			:>> id = "SWE-203-SA-1";
 			:>> sweId = "SWE-203";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-203-2'> SA203_2 :> SATask {
+		requirement def <'SWE-203-SA-2'> SA203_2 :> SATask {
 			doc /* Assess the impact of non-conformances on the project software's safety, quality,
 			 * and reliability.
 			 */
-			:>> id = "SA-203-2";
+			:>> id = "SWE-203-SA-2";
 			:>> sweId = "SWE-203";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-204-1'> SA204_1 :> SATask {
+		requirement def <'SWE-204-SA-1'> SA204_1 :> SATask {
 			doc /* Perform or confirm that a root cause analysis has been completed on all
 			 * identified high severity software nonconformances, and that the results are recorded
 			 * and have been assessed for adequacy.
 			 */
-			:>> id = "SA-204-1";
+			:>> id = "SWE-204-SA-1";
 			:>> sweId = "SWE-204";
 			:>> taskNumber = 1;
 		}
 
-		requirement def <'SA-204-2'> SA204_2 :> SATask {
+		requirement def <'SWE-204-SA-2'> SA204_2 :> SATask {
 			doc /* Confirm that the project analyzed the processes identified in the root cause
 			 * analysis associated with the high severity software non-conformances.
 			 */
-			:>> id = "SA-204-2";
+			:>> id = "SWE-204-SA-2";
 			:>> sweId = "SWE-204";
 			:>> taskNumber = 2;
 		}
 
-		requirement def <'SA-204-3'> SA204_3 :> SATask {
+		requirement def <'SWE-204-SA-3'> SA204_3 :> SATask {
 			doc /* Assess opportunities for improvement on the processes identified in the root
 			 * cause analysis associated with the high severity software non- conformances.
 			 */
-			:>> id = "SA-204-3";
+			:>> id = "SWE-204-SA-3";
 			:>> sweId = "SWE-204";
 			:>> taskNumber = 3;
 		}
 
-		requirement def <'SA-204-4'> SA204_4 :> SATask {
+		requirement def <'SWE-204-SA-4'> SA204_4 :> SATask {
 			doc /* Perform or confirm tracking of corrective actions to closure on high severity
 			 * software non- conformances.
 			 */
-			:>> id = "SA-204-4";
+			:>> id = "SWE-204-SA-4";
 			:>> sweId = "SWE-204";
 			:>> taskNumber = 4;
 		}
