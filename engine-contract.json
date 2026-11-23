@@ -532,6 +532,97 @@
       ]
     },
     {
+      "name": "HDBK1009::ComponentRequirement",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::Goal",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::MeasureOfEffectiveness",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::MeasureOfPerformance",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::Need",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::Objective",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::Stakeholder",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::StakeholderExpectationStatement",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::SubsystemRequirement",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::SystemRequirement",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::VVCase",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::ValidationRequirement",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
+      "name": "HDBK1009::VerificationRequirement",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/hdbk1009.go"
+      ]
+    },
+    {
       "name": "IdentityMetadata::ElementId",
       "kind": "metadata",
       "attributes": [
@@ -719,6 +810,157 @@
       "consumers": [
         "internal/semantic/semantics/synthesized_name.go",
         "internal/translate/migrate/names.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::Applicability",
+      "kind": "metadata",
+      "attributes": [
+        "applicable",
+        "comments",
+        "recordLocation"
+      ],
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::Applicable",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::CapabilityFactor",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::CapabilityFactorAssessment",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::CriticalityAssessment",
+      "kind": "metadata",
+      "attributes": [
+        "consequence",
+        "influence",
+        "rating",
+        "method"
+      ],
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::CriticalityRating",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::DecisionConsequence",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::FactorLevel",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::MSCapabilityAssessment",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::MSInfluence",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::MSRequirement",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::MSRequirements",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::MSResultsAssessment",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::MSResultsReport",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::RequirementsIdentificationMatrix",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::ResultsFactor",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::ResultsFactorAssessment",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::ResultsWarning",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::UncertaintyEstimateKind",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
+      ]
+    },
+    {
+      "name": "NASASTD7009::WarningOccurrence",
+      "kind": "element",
+      "consumers": [
+        "internal/check/passes/nasastd7009.go"
       ]
     },
     {
