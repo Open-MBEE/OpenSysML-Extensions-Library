@@ -4079,12 +4079,17 @@ library package NPR7150 {
 	}
 
 	calc def RequirementMappingEntries :> Query {
-		doc /* The requirement usages below root that carry a RequirementMapping annotation. */
+		doc /* The requirement usages below root that carry a RequirementMapping annotation. An
+		 * annotated requirement definition is reusable vocabulary, not a row of a project's matrix.
+		 */
 		in root : Element;
 		in depth : Integer default 16;
-		WhereMetadata(
-			source = Descendants(source = root, maxDepth = depth),
-			'metadata' = "NPR7150::RequirementMapping"
+		WhereType(
+			source = WhereMetadata(
+				source = Descendants(source = root, maxDepth = depth),
+				'metadata' = "NPR7150::RequirementMapping"
+			),
+			type = "RequirementUsage"
 		)
 	}
 
@@ -4141,12 +4146,16 @@ library package NPR7150 {
 
 	calc def SoftwareClassificationRegister :> Query {
 		doc /* One row per system or subsystem containing software below root: name, software class,
-		 * safety-critical determination and documentation, the record SWE-176 asks for.
+		 * safety-critical determination and documentation, the record SWE-176 asks for. The rows
+		 * are part usages; a definition specializing SoftwareSystem is not itself a system.
 		 */
 		in root : Element;
 		in depth : Integer default 16;
 		Project(
-			source = WhereType(source = Descendants(source = root, maxDepth = depth), type = "NPR7150::SoftwareSystem"),
+			source = WhereType(
+				source = WhereType(source = Descendants(source = root, maxDepth = depth), type = "NPR7150::SoftwareSystem"),
+				type = "PartUsage"
+			),
 			properties = ("name", "softwareClass", "safetyCritical", "documentation"),
 			tolerate = true
 		)
