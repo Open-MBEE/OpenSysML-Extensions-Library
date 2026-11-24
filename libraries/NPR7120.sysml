@@ -471,7 +471,7 @@ library package NPR7120 {
 				 * covers KDP II to KDP n, each informed by a PIR; redefine `designation` for a
 				 * later one.
 				 */
-				:>> designation = "KDP II";
+				:>> designation default = "KDP II";
 				:>> lifeCycle = LifeCycleKind::uncoupledOrLooselyCoupledProgram;
 			}
 		}
@@ -525,7 +525,7 @@ library package NPR7120 {
 				 * baselines.' The row covers KDP IV to KDP n-1, each informed by a PIR;
 				 * redefine `designation` for a later one.
 				 */
-				:>> designation = "KDP IV";
+				:>> designation default = "KDP IV";
 				:>> lifeCycle = LifeCycleKind::tightlyCoupledProgram;
 			}
 
@@ -535,7 +535,7 @@ library package NPR7120 {
 				 * archival of mission and science data and safe disposal of its assets.' The
 				 * last KDP, informed by the DR; redefine `designation` with its numeral.
 				 */
-				:>> designation = "KDP n";
+				:>> designation default = "KDP n";
 				:>> lifeCycle = LifeCycleKind::tightlyCoupledProgram;
 			}
 		}
@@ -610,7 +610,7 @@ library package NPR7120 {
 				 * to single-project programs, informed by a PIR during Phase E; Figure 2-4
 				 * numbers them KDP E2 and so on.
 				 */
-				:>> designation = "KDP En";
+				:>> designation default = "KDP En";
 			}
 
 			occurrence def KDPF :> SpaceFlightKeyDecisionPoint {
